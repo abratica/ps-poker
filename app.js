@@ -80,8 +80,9 @@
   }
   const cards = (arr, small) => `<span class="cards">${(arr || []).map((c) => card(c, small)).join("")}</span>`;
   function setTab(name) {
-    document.querySelectorAll(".tabbar a").forEach((a) => a.classList.toggle("on", a.dataset.tab === name));
+    document.querySelectorAll(".tabs a").forEach((a) => a.classList.toggle("on", a.dataset.tab === name));
   }
+  function dateline(text) { const d = $("#dateline"); if (d) d.textContent = text; }
   function render(html) { view.innerHTML = html; }
   function pct(n, d) { return d ? Math.round((100 * n) / d) : 0; }
 
@@ -116,49 +117,48 @@
     Object.values(P.episodes).forEach((e) => Object.values(e.hands).forEach((h) => Object.values(h.answers).forEach((a) => { decisions++; if (a.ok) matched++; })));
     Object.values(P.lessons).forEach((l) => Object.values(l.answers).forEach((a) => { drillQ++; if (a.ok) drillOk++; }));
 
+    dateline("Hungry Horse study");
     let resume = "";
     if (P.last) {
-      resume = `<a class="resume tile" href="${esc(P.last.href)}">
+      resume = `<a class="board" href="${esc(P.last.href)}">
         <p class="eyebrow">Pick up where you left off</p>
         <h2>${esc(P.last.title)}</h2>
-        <p>${esc(P.last.sub || "")}</p>
+        <p class="sub">${esc(P.last.sub || "")}</p>
         <span class="btn">Continue</span>
       </a>`;
     } else {
-      resume = `<a class="resume tile" href="#/ep/1">
+      resume = `<a class="board" href="#/ep/1">
         <p class="eyebrow">Start here</p>
         <h2>Episode 1</h2>
-        <p>Marc's first session of the $100/hr challenge. 12 hands, street by street.</p>
+        <p class="sub">Marc's first session of the $100/hr challenge. 12 hands, street by street.</p>
         <span class="btn">Play Episode 1</span>
       </a>`;
     }
 
     render(`
-      <h1>Hungry Horse study</h1>
-      <p class="sub">Decide first. Then see what Marc did, and why.</p>
       ${resume}
       <div class="stats">
-        <div class="stat"><div class="v">${decisions}</div><div class="l">decisions</div></div>
-        <div class="stat"><div class="v">${decisions ? pct(matched, decisions) + "%" : "–"}</div><div class="l">matched Marc</div></div>
-        <div class="stat"><div class="v">${drillQ ? pct(drillOk, drillQ) + "%" : "–"}</div><div class="l">drill accuracy</div></div>
+        <div class="stat"><div class="v">${decisions}</div><div class="l">Decisions</div></div>
+        <div class="stat"><div class="v">${decisions ? pct(matched, decisions) + "%" : "–"}</div><div class="l">Matched Marc</div></div>
+        <div class="stat"><div class="v">${drillQ ? pct(drillOk, drillQ) + "%" : "–"}</div><div class="l">Drill accuracy</div></div>
       </div>
       <div class="stack">
         <a class="tile" href="#/episodes">
           <p class="eyebrow">Series</p>
           <h2>Episodes</h2>
-          <p class="sub" style="margin:0">${epsDone} of ${idx.episodes.length} episodes played · ${available.length} available</p>
+          <p class="sub">${epsDone} of ${idx.episodes.length} episodes played · ${available.length} available</p>
           <div class="bar"><span style="width:${pct(epsDone, idx.episodes.length)}%"></span></div>
           <span class="arrow">›</span>
         </a>
-        <a class="tile" href="#/curriculum">
+        <a class="tile gold" href="#/curriculum">
           <p class="eyebrow">Course</p>
           <h2>Curriculum</h2>
-          <p class="sub" style="margin:0">${lessonsDone} of ${lessons.length} lessons done · modules 1.1 and 1.2 open</p>
+          <p class="sub">${lessonsDone} of ${lessons.length} lessons done · modules 1.1 and 1.2 open</p>
           <div class="bar gold"><span style="width:${pct(lessonsDone, lessons.length)}%"></span></div>
           <span class="arrow">›</span>
         </a>
       </div>
-      <p class="foot">Built from Marc's videos. Progress is saved on this phone.</p>
+      <p class="foot">Decide first. Then see what Marc did, and why. Progress is saved on this phone.</p>
     `);
   }
 
@@ -175,9 +175,8 @@
         <span class="state">${state}</span>`;
       return e.available ? `<li><a class="item ${cls}" href="#/ep/${e.id}">${inner}</a></li>` : `<li><div class="item ${cls}">${inner}</div></li>`;
     });
+    dateline(idx.series);
     render(`
-      <p class="eyebrow">${esc(idx.series)}</p>
-      <h1>Episodes</h1>
       <p class="sub">${esc(idx.description)}</p>
       <ul class="list">${items.join("")}</ul>
     `);
@@ -213,15 +212,15 @@
     const cta = s.done
       ? `<div class="outcome"><p class="eyebrow">Session result</p>${esc(ep.result)}</div>`
       : `<a class="btn" href="#/ep/${ep.id}/h/${nextIdx < 0 ? 0 : nextIdx}" style="margin-top:12px">${handsDone ? "Continue" : "Start"} · Hand ${(nextIdx < 0 ? 0 : nextIdx) + 1}</a>`;
+    dateline(`Episode ${ep.id} · ${ep.subtitle}`);
     render(`
       <p class="eyebrow">Episode ${ep.id}</p>
       <h1>${esc(ep.title)}</h1>
-      <p class="sub">${esc(ep.subtitle)}</p>
       ${intro}
       <div class="bar" style="margin:12px 0 4px"><span style="width:${pct(handsDone, ep.hands.length)}%"></span></div>
       <p class="small muted">${handsDone} of ${ep.hands.length} hands played</p>
       ${cta}
-      <h2>Hands</h2>
+      <h2 class="section-title">Hands</h2>
       <ul class="list">${items.join("")}</ul>
     `);
     if (!s.intro) { s.intro = true; save(); }
@@ -243,12 +242,12 @@
     const felt = `<div class="felt">
       <div class="spread">
         <div class="hero">${cards(hand.setup.hero.cards)}<span class="pos">${esc(hand.setup.hero.pos)}</span></div>
-        <div class="small" style="color:#cfdfd5">${esc(hand.setup.hero.label)}</div>
+        <div class="hero-label">${esc(hand.setup.hero.label)}</div>
       </div>
       <div class="label" style="margin-top:14px">Board${street.name && !/preflop/i.test(street.name) ? " · " + esc(street.name.replace(/\s*\(.*\)/, "")) : ""}</div>
-      <div class="board">${board.length ? board.map((c) => card(c)).join("") : '<span class="small" style="color:#cfdfd5">No cards yet</span>'}</div>
+      <div class="board">${board.length ? board.map((c) => card(c)).join("") : '<span class="small" style="color:rgba(247,244,238,.6)">No cards yet</span>'}</div>
       ${street.boardNote ? `<div class="board-note">${esc(street.boardNote)}</div>` : ""}
-      ${street.pot ? `<div class="pot"><span class="small" style="color:#cfdfd5">Pot</span><b>${esc(street.pot)}</b></div>` : ""}
+      ${street.pot ? `<div class="pot"><span class="label">Pot</span><b>${esc(street.pot)}</b></div>` : ""}
     </div>`;
 
     const setup = `<div class="panel setup">
@@ -297,9 +296,10 @@
     }
     current += `</div>`;
 
+    dateline(`Episode ${ep.id} · Hand ${hi + 1} of ${ep.hands.length}`);
     render(`
       <p class="eyebrow"><a href="#/ep/${ep.id}">Episode ${ep.id}</a> · Hand ${hi + 1} of ${ep.hands.length}</p>
-      <h1 style="font-size:23px">${esc(hand.title)}</h1>
+      <h1>${esc(hand.title)}</h1>
       ${felt}
       ${setup}
       <div class="panel" style="margin-top:10px">${past}${current}</div>
@@ -337,14 +337,14 @@
         const cls = locked ? "locked" : done === lessons.length ? "done" : done ? "current" : "";
         const state = locked ? "Soon" : done === lessons.length ? "Done" : `${done}/${lessons.length}`;
         const inner = `<span class="num">${esc(m.id)}</span>
-          <span class="body"><span class="title">${esc(m.title)}</span><span class="meta">${esc(m.summary)}</span></span>
+          <span class="body"><span class="title">${esc(m.title)}</span>${locked ? "" : `<span class="meta">${esc(m.summary)}</span>`}</span>
           <span class="state">${state}</span>`;
         return locked ? `<li><div class="item ${cls}">${inner}</div></li>` : `<li><a class="item ${cls}" href="#/module/${esc(m.id)}">${inner}</a></li>`;
       });
       return `<section class="phase"><div class="phase-head"><span class="n">PHASE ${p.number}</span><h2>${esc(p.title)}</h2><span class="tag">${esc(p.tagline)}</span></div><ul class="list">${mods.join("")}</ul></section>`;
     });
+    dateline(cur.title);
     render(`
-      <h1>${esc(cur.title)}</h1>
       <p class="sub">${esc(cur.intro)}</p>
       ${phases.join("")}
     `);
@@ -367,12 +367,13 @@
         <span class="state">${state}</span></a></li>`;
     });
     const next = mod.lessons.find((l) => !lessonState(l.id).done);
+    dateline(`Phase ${phase.number} · ${phase.title}`);
     render(`
       <p class="eyebrow"><a href="#/curriculum">Phase ${phase.number} · ${esc(phase.title)}</a></p>
       <h1>${esc(mod.id)} ${esc(mod.title)}</h1>
       <p class="sub">${esc(mod.summary)}</p>
       ${next ? `<a class="btn" href="#/lesson/${esc(next.id)}">${Object.keys(lessonState(next.id).answers).length || lessonState(next.id).stage !== "concept" ? "Continue" : "Start"}: ${esc(next.title)}</a>` : `<div class="outcome"><p class="eyebrow">Module complete</p>All lessons done. The drills can be replayed any time.</div>`}
-      <h2>Lessons</h2>
+      <h2 class="section-title">Lessons</h2>
       <ul class="list">${items.join("")}</ul>
       ${mod.homework ? `<div class="homework"><p class="eyebrow">Homework</p>${esc(mod.homework)}</div>` : ""}
       <div class="sources"><b>Source videos:</b> ${(mod.sources || []).map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>`).join(" · ")}</div>
@@ -401,7 +402,8 @@
     const ls = lessonState(id);
     setLast({ href: `#/lesson/${id}`, title: `Lesson ${id} · ${L.title}`, sub: `Module ${M.id} · ${M.title}` });
 
-    const head = `<p class="eyebrow"><a href="#/module/${esc(M.id)}">Module ${esc(M.id)} · ${esc(M.title)}</a></p><h1 style="font-size:24px">${esc(L.title)}</h1>`;
+    dateline(`Module ${M.id} · ${M.title}`);
+    const head = `<p class="eyebrow"><a href="#/module/${esc(M.id)}">Module ${esc(M.id)} · ${esc(M.title)}</a></p><h1>${esc(L.title)}</h1>`;
 
     if (ls.stage === "concept") {
       render(`${head}<p class="sub">${L.minutes} min read, then ${L.drill.questions.length} questions.</p>
@@ -449,7 +451,7 @@
     render(`${head}
       <div class="panel">
         <div class="score"><div class="big">${ok}/${qs.length}</div><div class="lbl">${ok === qs.length ? "Clean." : ok >= qs.length * 0.7 ? "Solid. Review the misses below." : "Worth a re-read before moving on."}</div></div>
-        ${misses.length ? `<h3>Missed</h3>${misses.map((q) => `<p class="small"><b>${esc(q.prompt.length > 90 ? q.prompt.slice(0, 90) + "…" : q.prompt)}</b><br>${esc(q.explain)}</p>`).join("")}` : ""}
+        ${misses.length ? `<h2 class="section-title" style="font-size:17px;margin:14px 0 8px">Missed</h2>${misses.map((q) => `<p class="small"><b>${esc(q.prompt.length > 90 ? q.prompt.slice(0, 90) + "…" : q.prompt)}</b><br>${esc(q.explain)}</p>`).join("")}` : ""}
       </div>
       ${lastInModule && M.homework ? `<div class="homework"><p class="eyebrow">Homework for module ${esc(M.id)}</p>${esc(M.homework)}</div>` : ""}
       <div class="btn-row">
@@ -463,20 +465,35 @@
     $("#reread").addEventListener("click", () => { ls.stage = "concept"; save(); lesson(id); });
   }
 
-  /* ── Theme ───────────────────────────────────────────────── */
+  /* ── Theme (same behaviour as PS Sports: follows the phone until you tap, then remembers) ── */
   const THEME_KEY = "psp-theme";
-  function applyTheme() {
-    let t = null; try { t = localStorage.getItem(THEME_KEY); } catch {}
-    if (t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme;
+  const THEME_LABEL = { light: "Light mode", dark: "Dark mode" };
+  const darkMQ = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+  function themePref() {
+    try { const v = localStorage.getItem(THEME_KEY); if (v === "light" || v === "dark") return v; } catch {}
+    return darkMQ && darkMQ.matches ? "dark" : "light";
   }
-  applyTheme();
-  $("#theme").addEventListener("click", () => {
-    const dark = matchMedia("(prefers-color-scheme: dark)").matches;
-    const curT = document.documentElement.dataset.theme || (dark ? "dark" : "light");
-    const next = curT === "dark" ? "light" : "dark";
+  function applyTheme() {
+    const pref = themePref();
+    document.documentElement.dataset.theme = pref;
+    const btn = $(".theme-btn");
+    if (btn) btn.setAttribute("aria-label", `${THEME_LABEL[pref]}. Tap for ${pref === "dark" ? "light" : "dark"} mode.`);
+    const meta = document.querySelector('meta[name="theme-color"]'); if (meta) meta.setAttribute("content", pref === "dark" ? "#000000" : "#141414");
+  }
+  let toastTimer = null;
+  function toast(text) {
+    let el = $(".theme-toast");
+    if (!el) { el = document.createElement("div"); el.className = "theme-toast"; el.setAttribute("role", "status"); document.body.appendChild(el); }
+    el.textContent = text; el.classList.add("show");
+    clearTimeout(toastTimer); toastTimer = setTimeout(() => el.classList.remove("show"), 1400);
+  }
+  $(".theme-btn").addEventListener("click", () => {
+    const next = themePref() === "dark" ? "light" : "dark";
     try { localStorage.setItem(THEME_KEY, next); } catch {}
-    applyTheme();
+    applyTheme(); toast(THEME_LABEL[next]);
   });
+  if (darkMQ && darkMQ.addEventListener) darkMQ.addEventListener("change", applyTheme);
+  applyTheme();
 
   /* ── Service worker + install bar (same pattern as PS Sports / PS Tube) ── */
   if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
@@ -489,7 +506,7 @@
     if (standalone() || dismissed() || document.querySelector(".install-bar")) return;
     const bar = document.createElement("div");
     bar.className = "install-bar";
-    bar.innerHTML = `<img src="icons/icon-192.png" alt="" width="40" height="40">
+    bar.innerHTML = `<img src="icons/ps-icon-192.png" alt="" width="40" height="40">
       <span class="install-text"><b>Get the PS Poker app</b><span>Episodes and lessons on your home screen</span></span>
       <button type="button" class="install-go">${label}</button>
       <button type="button" class="install-x" aria-label="Not now">×</button>`;
