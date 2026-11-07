@@ -13,10 +13,10 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="PS Poker">
 <link rel="preload" href="brand/logo-mark.svg" as="image">
-<link rel="preload" href="fonts/archivo-black-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/barlow-condensed-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/cinzel-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/playfair-display-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/manrope-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 <!-- Launch screen: shown once per app launch, fades out once the first view is on screen. -->
@@ -25,7 +25,7 @@
     background: #0E0E0E; color: #F7F4EE; transition: opacity .3s ease, transform .3s ease; }
   #splash.out { opacity: 0; transform: scale(1.03); pointer-events: none; }
   #splash .sp-icon { width: min(42vw, 180px); height: auto; border-radius: 22%; box-shadow: 0 10px 30px rgba(0,0,0,.5); animation: sp-in .4s ease-out both; }
-  #splash .sp-word { font-family: "Archivo Black", "Arial Black", sans-serif; font-size: clamp(18px, 5.5vw, 26px); letter-spacing: .22em; margin-left: .22em; margin-top: 8px; color: #F7F4EE; text-transform: uppercase; animation: sp-in .5s ease-out both; }
+  #splash .sp-word { font-family: "Cinzel", Georgia, serif; font-weight: 700; font-size: clamp(18px, 5.5vw, 26px); letter-spacing: .24em; margin-left: .24em; margin-top: 8px; color: #E9C65B; text-transform: uppercase; animation: sp-in .5s ease-out both; }
   @keyframes sp-in { from { opacity: 0; transform: scale(.94); } to { opacity: 1; transform: none; } }
   @media (prefers-reduced-motion: reduce) { #splash .sp-icon, #splash .sp-word { animation: none; } #splash { transition: opacity .2s; } #splash.out { transform: none; } }
 </style>
@@ -69,6 +69,6 @@
 
 <main id="view" class="main" aria-live="polite"></main>
 
-<script src="app.js?v=3"></script>
+<script src="app.js?v=4"></script>
 </body>
 </html>

@@ -11,7 +11,14 @@
       "title": "KQ offsuit from the lowjack",
       "kind": "quiz",
       "setup": {
-        "hero": { "pos": "LJ", "cards": ["Kx", "Qx"], "label": "KQ offsuit" },
+        "hero": {
+          "pos": "LJ",
+          "cards": [
+            "Ks",
+            "Qd"
+          ],
+          "label": "K♠Q♦ (KQ offsuit)"
+        },
         "villain": "Big blind, unknown player",
         "note": "Straddle is on ($10). Marc's ground rule: he never pushes for the straddle, but if it's on he goes with it."
       },
@@ -23,7 +30,11 @@
         },
         {
           "name": "Flop",
-          "board": ["Tx", "8x", "5x"],
+          "board": [
+            "Td",
+            "8c",
+            "5s"
+          ],
           "boardNote": "rainbow",
           "pot": "~$95",
           "action": "Marc flops nothing. The big blind checks.",
@@ -31,10 +42,22 @@
             "id": "e1h1-flop",
             "question": "Heads up, in position, single-raised pot, with air. What's the play?",
             "options": [
-              { "key": "check", "text": "Check back" },
-              { "key": "third", "text": "Bet about $30 (a third)" },
-              { "key": "half", "text": "Bet about $45 (half pot)" },
-              { "key": "pot", "text": "Bet about $95 (pot)" }
+              {
+                "key": "check",
+                "text": "Check back"
+              },
+              {
+                "key": "third",
+                "text": "Bet about $30 (a third)"
+              },
+              {
+                "key": "half",
+                "text": "Bet about $45 (half pot)"
+              },
+              {
+                "key": "pot",
+                "text": "Bet about $95 (pot)"
+              }
             ],
             "correct": "half",
             "marcDid": "half",
@@ -43,18 +66,35 @@
         },
         {
           "name": "Turn",
-          "board": ["Tx", "8x", "5x", "?"],
-          "boardNote": "the turn is a complete blank (the exact card isn't shown)",
+          "board": [
+            "Td",
+            "8c",
+            "5s",
+            "2h"
+          ],
+          "boardNote": "a complete blank",
           "pot": "~$185",
           "action": "The big blind checks again.",
           "decision": {
             "id": "e1h1-turn",
             "question": "Still nothing but two overcards. Villain has check-called the flop. What now?",
             "options": [
-              { "key": "check", "text": "Check back and take a free card" },
-              { "key": "small", "text": "Bet small, about $60" },
-              { "key": "big", "text": "Bet big, about $140, leaving an overbet for the river" },
-              { "key": "jam", "text": "Shove" }
+              {
+                "key": "check",
+                "text": "Check back and take a free card"
+              },
+              {
+                "key": "small",
+                "text": "Bet small, about $60"
+              },
+              {
+                "key": "big",
+                "text": "Bet big, about $140, leaving an overbet for the river"
+              },
+              {
+                "key": "jam",
+                "text": "Shove"
+              }
             ],
             "correct": "big",
             "marcDid": "big",
@@ -69,7 +109,14 @@
       "title": "Pocket fives, bottom set, and a river donk",
       "kind": "quiz",
       "setup": {
-        "hero": { "pos": "UTG", "cards": ["5x", "5x"], "label": "Pocket fives" },
+        "hero": {
+          "pos": "UTG",
+          "cards": [
+            "5c",
+            "5d"
+          ],
+          "label": "Pocket fives"
+        },
         "villain": "Small blind, unknown player",
         "note": "Straddle on. Sizing note from Marc: when the table is passive and not 3-betting much, use a bigger open. 4x is right with the straddle on; without a straddle he might go 5x or 6x at this table, but people get elastic to big absolute sizes."
       },
@@ -81,7 +128,11 @@
         },
         {
           "name": "Flop",
-          "board": ["Jx", "6x", "5x"],
+          "board": [
+            "Jh",
+            "6h",
+            "5s"
+          ],
           "boardNote": "two hearts",
           "pot": "~$95",
           "action": "Marc flops bottom set. The small blind checks.",
@@ -89,10 +140,22 @@
             "id": "e1h2-flop",
             "question": "Bottom set on a board with a flush draw. What's the play?",
             "options": [
-              { "key": "check", "text": "Check back to slow-play" },
-              { "key": "third", "text": "Bet about $30" },
-              { "key": "half", "text": "Bet about $50" },
-              { "key": "pot", "text": "Bet about $95" }
+              {
+                "key": "check",
+                "text": "Check back to slow-play"
+              },
+              {
+                "key": "third",
+                "text": "Bet about $30"
+              },
+              {
+                "key": "half",
+                "text": "Bet about $50"
+              },
+              {
+                "key": "pot",
+                "text": "Bet about $95"
+              }
             ],
             "correct": "half",
             "marcDid": "half",
@@ -101,7 +164,12 @@
         },
         {
           "name": "Turn",
-          "board": ["Jx", "6x", "5x", "9x"],
+          "board": [
+            "Jh",
+            "6h",
+            "5s",
+            "9c"
+          ],
           "boardNote": "the 9 is offsuit; 8-7 makes a straight now",
           "pot": "~$195",
           "action": "The small blind checks.",
@@ -109,10 +177,22 @@
             "id": "e1h2-turn",
             "question": "Not the cleanest card: the obvious straight draw got there. Villain checks. What now?",
             "options": [
-              { "key": "check", "text": "Check back, the straight got there" },
-              { "key": "small", "text": "Bet small, about $60" },
-              { "key": "big", "text": "Bet big, about $200" },
-              { "key": "jam", "text": "Shove" }
+              {
+                "key": "check",
+                "text": "Check back, the straight got there"
+              },
+              {
+                "key": "small",
+                "text": "Bet small, about $60"
+              },
+              {
+                "key": "big",
+                "text": "Bet big, about $200"
+              },
+              {
+                "key": "jam",
+                "text": "Shove"
+              }
             ],
             "correct": "big",
             "marcDid": "big",
@@ -121,7 +201,13 @@
         },
         {
           "name": "River",
-          "board": ["Jx", "6x", "5x", "9x", "3h"],
+          "board": [
+            "Jh",
+            "6h",
+            "5s",
+            "9c",
+            "3h"
+          ],
           "boardNote": "the 3♥ completes the flush",
           "pot": "~$600",
           "action": "Marc planned to bet small for value if checked to. Instead the small blind leads out for $350.",
@@ -129,9 +215,18 @@
             "id": "e1h2-river",
             "question": "You have a set. Villain check-called the flop, check-called the big turn bet, and now donk-leads $350 into about $600 when the flush comes in. What's the play?",
             "options": [
-              { "key": "fold", "text": "Fold" },
-              { "key": "call", "text": "Call" },
-              { "key": "raise", "text": "Raise" }
+              {
+                "key": "fold",
+                "text": "Fold"
+              },
+              {
+                "key": "call",
+                "text": "Call"
+              },
+              {
+                "key": "raise",
+                "text": "Raise"
+              }
             ],
             "correct": "fold",
             "marcDid": "fold",
@@ -146,7 +241,14 @@
       "title": "KT offsuit, four ways, and a very thin jam",
       "kind": "quiz",
       "setup": {
-        "hero": { "pos": "UTG", "cards": ["Kx", "Tx"], "label": "KT offsuit" },
+        "hero": {
+          "pos": "UTG",
+          "cards": [
+            "Kh",
+            "Td"
+          ],
+          "label": "K♥T♦ (KT offsuit)"
+        },
         "villain": "Big blind (main villain), plus the small blind and straddle",
         "note": "Straddle on. Marc calls this a very light open, but at a table where nobody 3-bets, opening wider is an exploit."
       },
@@ -158,7 +260,11 @@
         },
         {
           "name": "Flop",
-          "board": ["Tx", "8x", "3x"],
+          "board": [
+            "Ts",
+            "8s",
+            "3d"
+          ],
           "boardNote": "two spades",
           "pot": "$160",
           "action": "Marc flops top pair. All three players check to him.",
@@ -166,10 +272,22 @@
             "id": "e1h3-flop",
             "question": "Top pair, four ways, everyone checks to you. What size?",
             "options": [
-              { "key": "check", "text": "Check" },
-              { "key": "third", "text": "Bet $60 (about a third)" },
-              { "key": "half", "text": "Bet $80 (half)" },
-              { "key": "pot", "text": "Bet $160 (pot)" }
+              {
+                "key": "check",
+                "text": "Check"
+              },
+              {
+                "key": "third",
+                "text": "Bet $60 (about a third)"
+              },
+              {
+                "key": "half",
+                "text": "Bet $80 (half)"
+              },
+              {
+                "key": "pot",
+                "text": "Bet $160 (pot)"
+              }
             ],
             "correct": "third",
             "marcDid": "third",
@@ -178,7 +296,11 @@
         },
         {
           "name": "Flop (facing a check-raise)",
-          "board": ["Tx", "8x", "3x"],
+          "board": [
+            "Ts",
+            "8s",
+            "3d"
+          ],
           "boardNote": "two spades",
           "pot": "$420 after the raise",
           "action": "The big blind has check-raised your $60 to $200.",
@@ -186,10 +308,22 @@
             "id": "e1h3-flop2",
             "question": "You bet small and got check-raised to $200. What's the play?",
             "options": [
-              { "key": "fold", "text": "Fold" },
-              { "key": "call", "text": "Call" },
-              { "key": "reraise", "text": "3-bet" },
-              { "key": "jam", "text": "Shove" }
+              {
+                "key": "fold",
+                "text": "Fold"
+              },
+              {
+                "key": "call",
+                "text": "Call"
+              },
+              {
+                "key": "reraise",
+                "text": "3-bet"
+              },
+              {
+                "key": "jam",
+                "text": "Shove"
+              }
             ],
             "correct": "call",
             "marcDid": "call",
@@ -198,7 +332,12 @@
         },
         {
           "name": "Turn",
-          "board": ["Tx", "8x", "3x", "9x"],
+          "board": [
+            "Ts",
+            "8s",
+            "3d",
+            "9c"
+          ],
           "boardNote": "the 9 is offsuit",
           "pot": "$560 · about $760 effective behind",
           "action": "Interestingly, the big blind checks.",
@@ -206,10 +345,22 @@
             "id": "e1h3-turn",
             "question": "He check-raised the flop and now checks the turn. You have top pair, king kicker, with about $760 behind into $560. What now?",
             "options": [
-              { "key": "check", "text": "Check back" },
-              { "key": "small", "text": "Bet about $200" },
-              { "key": "big", "text": "Bet about $400" },
-              { "key": "jam", "text": "Shove for about $760" }
+              {
+                "key": "check",
+                "text": "Check back"
+              },
+              {
+                "key": "small",
+                "text": "Bet about $200"
+              },
+              {
+                "key": "big",
+                "text": "Bet about $400"
+              },
+              {
+                "key": "jam",
+                "text": "Shove for about $760"
+              }
             ],
             "correct": "jam",
             "marcDid": "jam",
@@ -224,7 +375,14 @@
       "title": "T9 of diamonds flops a straight. Then the river.",
       "kind": "quiz",
       "setup": {
-        "hero": { "pos": "SB", "cards": ["Td", "9d"], "label": "T♦9♦" },
+        "hero": {
+          "pos": "SB",
+          "cards": [
+            "Td",
+            "9d"
+          ],
+          "label": "T♦9♦"
+        },
         "villain": "Straddle, unknown player",
         "note": "Straddle on. Marc is trying to get the session back on track after being stacked."
       },
@@ -237,10 +395,22 @@
             "id": "e1h4-pre",
             "question": "You're out of position against two players who continue wide and don't 3-bet enough. What's the play?",
             "options": [
-              { "key": "limp", "text": "Limp" },
-              { "key": "forty", "text": "Open to $40" },
-              { "key": "fifty", "text": "Open to $55" },
-              { "key": "eighty", "text": "Open to $80" }
+              {
+                "key": "limp",
+                "text": "Limp"
+              },
+              {
+                "key": "forty",
+                "text": "Open to $40"
+              },
+              {
+                "key": "fifty",
+                "text": "Open to $55"
+              },
+              {
+                "key": "eighty",
+                "text": "Open to $80"
+              }
             ],
             "correct": "fifty",
             "marcDid": "forty",
@@ -249,7 +419,11 @@
         },
         {
           "name": "Flop",
-          "board": ["Qx", "Kx", "Jx"],
+          "board": [
+            "Qs",
+            "Kc",
+            "Jh"
+          ],
           "boardNote": "rainbow",
           "pot": "~$85",
           "action": "Marc flops the straight (9-T-J-Q-K). He's first to act.",
@@ -257,8 +431,14 @@
             "id": "e1h4-flop",
             "question": "You flopped the straight, out of position, in a single-raised pot. First to act. What's the play?",
             "options": [
-              { "key": "bet", "text": "Lead out for value" },
-              { "key": "check", "text": "Check" }
+              {
+                "key": "bet",
+                "text": "Lead out for value"
+              },
+              {
+                "key": "check",
+                "text": "Check"
+              }
             ],
             "correct": "check",
             "marcDid": "check",
@@ -267,7 +447,11 @@
         },
         {
           "name": "Flop (facing a stab)",
-          "board": ["Qx", "Kx", "Jx"],
+          "board": [
+            "Qs",
+            "Kc",
+            "Jh"
+          ],
           "boardNote": "rainbow",
           "pot": "~$110 after the stab",
           "action": "Villain bet $25 into about $85.",
@@ -275,10 +459,22 @@
             "id": "e1h4-flop2",
             "question": "He stabbed small. You have the straight. What now?",
             "options": [
-              { "key": "call", "text": "Call" },
-              { "key": "small", "text": "Raise to about $75" },
-              { "key": "big", "text": "Raise to $175" },
-              { "key": "jam", "text": "Shove" }
+              {
+                "key": "call",
+                "text": "Call"
+              },
+              {
+                "key": "small",
+                "text": "Raise to about $75"
+              },
+              {
+                "key": "big",
+                "text": "Raise to $175"
+              },
+              {
+                "key": "jam",
+                "text": "Shove"
+              }
             ],
             "correct": "big",
             "marcDid": "big",
@@ -287,7 +483,12 @@
         },
         {
           "name": "Turn",
-          "board": ["Qx", "Kx", "Jx", "5x"],
+          "board": [
+            "Qs",
+            "Kc",
+            "Jh",
+            "5h"
+          ],
           "boardNote": "the 5 is offsuit, a brick",
           "pot": "~$430",
           "action": "Marc is first to act.",
@@ -295,10 +496,22 @@
             "id": "e1h4-turn",
             "question": "Brick turn. You have the straight and about $750 behind. What's the play?",
             "options": [
-              { "key": "check", "text": "Check" },
-              { "key": "small", "text": "Bet about $150" },
-              { "key": "mid", "text": "Bet $275" },
-              { "key": "jam", "text": "Shove" }
+              {
+                "key": "check",
+                "text": "Check"
+              },
+              {
+                "key": "small",
+                "text": "Bet about $150"
+              },
+              {
+                "key": "mid",
+                "text": "Bet $275"
+              },
+              {
+                "key": "jam",
+                "text": "Shove"
+              }
             ],
             "correct": "mid",
             "marcDid": "mid",
@@ -307,7 +520,12 @@
         },
         {
           "name": "Turn (facing a jam)",
-          "board": ["Qx", "Kx", "Jx", "5x"],
+          "board": [
+            "Qs",
+            "Kc",
+            "Jh",
+            "5h"
+          ],
           "boardNote": "the 5 is offsuit",
           "pot": "~$1,455 if you call $475 more",
           "action": "Villain shoved over your $275 bet. You have the straight, 9-T-J-Q-K. The nut straight is A-T.",
@@ -315,8 +533,14 @@
             "id": "e1h4-turn2",
             "question": "You check-raised the flop 7x and barreled the turn on a triple-broadway board. He jammed on top. You're getting a great price. What's the play?",
             "options": [
-              { "key": "fold", "text": "Fold" },
-              { "key": "call", "text": "Call" }
+              {
+                "key": "fold",
+                "text": "Fold"
+              },
+              {
+                "key": "call",
+                "text": "Call"
+              }
             ],
             "correct": "fold",
             "marcDid": "call",
@@ -331,7 +555,14 @@
       "title": "8♠7♠ and the big boy bluff",
       "kind": "quiz",
       "setup": {
-        "hero": { "pos": "UTG", "cards": ["8s", "7s"], "label": "8♠7♠" },
+        "hero": {
+          "pos": "UTG",
+          "cards": [
+            "8s",
+            "7s"
+          ],
+          "label": "8♠7♠"
+        },
         "villain": "Straddle: a recreational player who just sat down from the must-move table and is already up a significant amount",
         "note": "Straddle on. Marc talked almost the whole hand. The fact that villain is up matters: he doesn't want to punt away his profit."
       },
@@ -343,7 +574,11 @@
         },
         {
           "name": "Flop",
-          "board": ["Qx", "Jx", "2x"],
+          "board": [
+            "Qc",
+            "Jc",
+            "2d"
+          ],
           "boardNote": "two clubs",
           "pot": "~$85",
           "action": "Villain checks.",
@@ -351,9 +586,18 @@
             "id": "e1h5-flop",
             "question": "Nothing but a backdoor draw. Villain checks. What's the play?",
             "options": [
-              { "key": "check", "text": "Check back" },
-              { "key": "half", "text": "Bet $40 (about half)" },
-              { "key": "pot", "text": "Bet $85 (pot)" }
+              {
+                "key": "check",
+                "text": "Check back"
+              },
+              {
+                "key": "half",
+                "text": "Bet $40 (about half)"
+              },
+              {
+                "key": "pot",
+                "text": "Bet $85 (pot)"
+              }
             ],
             "correct": "half",
             "marcDid": "half",
@@ -362,7 +606,12 @@
         },
         {
           "name": "Turn",
-          "board": ["Qx", "Jx", "2x", "Ac"],
+          "board": [
+            "Qc",
+            "Jc",
+            "2d",
+            "Ac"
+          ],
           "boardNote": "the A♣ completes the flush",
           "pot": "~$165",
           "action": "Villain checks.",
@@ -370,9 +619,18 @@
             "id": "e1h5-turn",
             "question": "The flush comes in and villain checks. You have nothing. What now?",
             "options": [
-              { "key": "check", "text": "Check back" },
-              { "key": "small", "text": "Bet small, about $60" },
-              { "key": "big", "text": "Bet big, about $165" }
+              {
+                "key": "check",
+                "text": "Check back"
+              },
+              {
+                "key": "small",
+                "text": "Bet small, about $60"
+              },
+              {
+                "key": "big",
+                "text": "Bet big, about $165"
+              }
             ],
             "correct": "small",
             "marcDid": "small",
@@ -381,18 +639,35 @@
         },
         {
           "name": "River",
-          "board": ["Qx", "Jx", "2x", "Ac", "?"],
-          "boardNote": "the river card isn't shown in the video",
+          "board": [
+            "Qc",
+            "Jc",
+            "2d",
+            "Ac",
+            "4d"
+          ],
           "pot": "$285",
           "action": "Villain checks.",
           "decision": {
             "id": "e1h5-river",
             "question": "Villain check-called twice, snap-called when the flush came in, and checks the river. You have nothing. What's the play?",
             "options": [
-              { "key": "check", "text": "Give up" },
-              { "key": "half", "text": "Bet $150" },
-              { "key": "pot", "text": "Bet $285" },
-              { "key": "over", "text": "Overbet $515" }
+              {
+                "key": "check",
+                "text": "Give up"
+              },
+              {
+                "key": "half",
+                "text": "Bet $150"
+              },
+              {
+                "key": "pot",
+                "text": "Bet $285"
+              },
+              {
+                "key": "over",
+                "text": "Overbet $515"
+              }
             ],
             "correct": "over",
             "marcDid": "over",
@@ -407,7 +682,14 @@
       "title": "Pocket deuces: a light 3-bet and a river punish",
       "kind": "quiz",
       "setup": {
-        "hero": { "pos": "CO", "cards": ["2x", "2x"], "label": "Pocket deuces" },
+        "hero": {
+          "pos": "CO",
+          "cards": [
+            "2s",
+            "2h"
+          ],
+          "label": "Pocket deuces"
+        },
         "villain": "Lowjack: a recreational player. Small blind: a European player who just sat down, who Marc assumes is a pro",
         "note": "Marc is pushing the exploit cliff to see how far he can go before tumbling down."
       },
@@ -420,9 +702,18 @@
             "id": "e1h6-pre",
             "question": "A rec opens to $20 and you have pocket deuces in the cutoff. What's the play?",
             "options": [
-              { "key": "fold", "text": "Fold" },
-              { "key": "call", "text": "Call" },
-              { "key": "threebet", "text": "3-bet" }
+              {
+                "key": "fold",
+                "text": "Fold"
+              },
+              {
+                "key": "call",
+                "text": "Call"
+              },
+              {
+                "key": "threebet",
+                "text": "3-bet"
+              }
             ],
             "correct": "threebet",
             "marcDid": "threebet",
@@ -431,15 +722,25 @@
         },
         {
           "name": "Flop",
-          "board": ["Ax", "9x", "6x"],
+          "board": [
+            "Ad",
+            "9c",
+            "6s"
+          ],
           "pot": "~$285",
           "action": "The small blind and the lowjack both check.",
           "decision": {
             "id": "e1h6-flop",
             "question": "Three ways, you have nothing, both players check to you as the 3-bettor. What's the play?",
             "options": [
-              { "key": "bet", "text": "C-bet" },
-              { "key": "check", "text": "Check" }
+              {
+                "key": "bet",
+                "text": "C-bet"
+              },
+              {
+                "key": "check",
+                "text": "Check"
+              }
             ],
             "correct": "check",
             "marcDid": "check",
@@ -448,23 +749,43 @@
         },
         {
           "name": "Turn",
-          "board": ["Ax", "9x", "6x", "3x"],
+          "board": [
+            "Ad",
+            "9c",
+            "6s",
+            "3h"
+          ],
           "boardNote": "the 3 is offsuit",
           "pot": "~$285",
           "action": "It checks through again."
         },
         {
           "name": "River",
-          "board": ["Ax", "9x", "6x", "3x", "Kx"],
+          "board": [
+            "Ad",
+            "9c",
+            "6s",
+            "3h",
+            "Kc"
+          ],
           "pot": "~$285",
           "action": "The small blind bets $30 into about $285.",
           "decision": {
             "id": "e1h6-river",
             "question": "The pro who cold-called your 3-bet bets $30 into $285 on a king river. You have deuces. What's the play?",
             "options": [
-              { "key": "fold", "text": "Fold" },
-              { "key": "call", "text": "Call" },
-              { "key": "raise", "text": "Raise big" }
+              {
+                "key": "fold",
+                "text": "Fold"
+              },
+              {
+                "key": "call",
+                "text": "Call"
+              },
+              {
+                "key": "raise",
+                "text": "Raise big"
+              }
             ],
             "correct": "raise",
             "marcDid": "raise",
@@ -479,7 +800,14 @@
       "title": "Pocket sixes against a 3-bet, and a read that misses",
       "kind": "quiz",
       "setup": {
-        "hero": { "pos": "UTG", "cards": ["6x", "6x"], "label": "Pocket sixes" },
+        "hero": {
+          "pos": "UTG",
+          "cards": [
+            "6c",
+            "6d"
+          ],
+          "label": "Pocket sixes"
+        },
         "villain": "A recreational player who had seemed straightforward and ABC. About $1,300 effective.",
         "note": "The straddle is off. Straight $5/5 now."
       },
@@ -492,9 +820,18 @@
             "id": "e1h7-pre",
             "question": "A straightforward rec 3-bets you to $90. You have 66, about $1,300 effective. What's the play?",
             "options": [
-              { "key": "fold", "text": "Fold" },
-              { "key": "call", "text": "Call" },
-              { "key": "fourbet", "text": "4-bet" }
+              {
+                "key": "fold",
+                "text": "Fold"
+              },
+              {
+                "key": "call",
+                "text": "Call"
+              },
+              {
+                "key": "fourbet",
+                "text": "4-bet"
+              }
             ],
             "correct": "call",
             "marcDid": "call",
@@ -503,7 +840,11 @@
         },
         {
           "name": "Flop",
-          "board": ["5x", "7x", "3x"],
+          "board": [
+            "5s",
+            "7h",
+            "3d"
+          ],
           "boardNote": "rainbow",
           "pot": "$185",
           "action": "Marc checks. Villain c-bets $80.",
@@ -511,9 +852,18 @@
             "id": "e1h7-flop",
             "question": "An overpair to a 7-5-3 rainbow flop. Villain bets $80 into $185. What's the play?",
             "options": [
-              { "key": "fold", "text": "Fold" },
-              { "key": "call", "text": "Call" },
-              { "key": "raise", "text": "Check-raise" }
+              {
+                "key": "fold",
+                "text": "Fold"
+              },
+              {
+                "key": "call",
+                "text": "Call"
+              },
+              {
+                "key": "raise",
+                "text": "Check-raise"
+              }
             ],
             "correct": "call",
             "marcDid": "call",
@@ -522,24 +872,47 @@
         },
         {
           "name": "Turn",
-          "board": ["5x", "7x", "3x", "3x"],
+          "board": [
+            "5s",
+            "7h",
+            "3d",
+            "3c"
+          ],
           "boardNote": "the board pairs",
           "pot": "$345",
           "action": "Marc checks. Villain thinks it over and checks back. Now Marc is positive he has the best hand."
         },
         {
           "name": "River",
-          "board": ["5x", "7x", "3x", "3x", "Tx"],
+          "board": [
+            "5s",
+            "7h",
+            "3d",
+            "3c",
+            "Ts"
+          ],
           "pot": "$345",
           "action": "Marc is first to act.",
           "decision": {
             "id": "e1h7-river",
             "question": "Villain checked back the turn. You're sure you're ahead. If he has AK, a check here probably goes check-check. What's the play?",
             "options": [
-              { "key": "check", "text": "Check and let him bluff" },
-              { "key": "tiny", "text": "Bet $75 (very small)" },
-              { "key": "half", "text": "Bet $175 (half)" },
-              { "key": "pot", "text": "Bet $345 (pot)" }
+              {
+                "key": "check",
+                "text": "Check and let him bluff"
+              },
+              {
+                "key": "tiny",
+                "text": "Bet $75 (very small)"
+              },
+              {
+                "key": "half",
+                "text": "Bet $175 (half)"
+              },
+              {
+                "key": "pot",
+                "text": "Bet $345 (pot)"
+              }
             ],
             "correct": "tiny",
             "marcDid": "tiny",
@@ -554,7 +927,14 @@
       "title": "QJ, four ways, out of position, and the bluff-catching checklist",
       "kind": "quiz",
       "setup": {
-        "hero": { "pos": "LJ", "cards": ["Qx", "Jx"], "label": "QJ" },
+        "hero": {
+          "pos": "LJ",
+          "cards": [
+            "Qh",
+            "Js"
+          ],
+          "label": "Q♥J♠"
+        },
         "villain": "Cutoff (main villain). Hijack and small blind also in.",
         "note": "Straddle off. Marc has been opening a bit wider with bigger sizes at this passive table. After this hand he says the adjustment is probably to tighten up a little and size even bigger, since opens keep getting called by multiple players in position."
       },
@@ -566,7 +946,11 @@
         },
         {
           "name": "Flop",
-          "board": ["Qx", "7x", "6x"],
+          "board": [
+            "Qd",
+            "7c",
+            "6s"
+          ],
           "boardNote": "rainbow",
           "pot": "~$100",
           "action": "Marc flops top pair. The small blind checks. Marc is next, with two players still behind him in position.",
@@ -574,8 +958,14 @@
             "id": "e1h8-flop",
             "question": "Top pair, four ways, two players in position behind you. What's the play?",
             "options": [
-              { "key": "bet", "text": "Bet" },
-              { "key": "check", "text": "Check" }
+              {
+                "key": "bet",
+                "text": "Bet"
+              },
+              {
+                "key": "check",
+                "text": "Check"
+              }
             ],
             "correct": "check",
             "marcDid": "check",
@@ -584,7 +974,11 @@
         },
         {
           "name": "Flop (facing the stab)",
-          "board": ["Qx", "7x", "6x"],
+          "board": [
+            "Qd",
+            "7c",
+            "6s"
+          ],
           "boardNote": "rainbow",
           "pot": "~$160 after the bet",
           "action": "The cutoff bet $60 into $100.",
@@ -592,9 +986,18 @@
             "id": "e1h8-flop2",
             "question": "Last to act on the flop, the cutoff bet $60. You have top pair. What's the play?",
             "options": [
-              { "key": "fold", "text": "Fold" },
-              { "key": "call", "text": "Call" },
-              { "key": "raise", "text": "Check-raise" }
+              {
+                "key": "fold",
+                "text": "Fold"
+              },
+              {
+                "key": "call",
+                "text": "Call"
+              },
+              {
+                "key": "raise",
+                "text": "Check-raise"
+              }
             ],
             "correct": "call",
             "marcDid": "call",
@@ -603,7 +1006,12 @@
         },
         {
           "name": "Turn",
-          "board": ["Qx", "7x", "6x", "5c"],
+          "board": [
+            "Qd",
+            "7c",
+            "6s",
+            "5c"
+          ],
           "boardNote": "the 5♣ brings a backdoor flush draw",
           "pot": "$220",
           "action": "Marc checks. The cutoff bets $80.",
@@ -611,9 +1019,18 @@
             "id": "e1h8-turn",
             "question": "Not a great runout. The cutoff bets $80 into $220, a little over a third. What's the play?",
             "options": [
-              { "key": "fold", "text": "Fold" },
-              { "key": "call", "text": "Call" },
-              { "key": "raise", "text": "Check-raise" }
+              {
+                "key": "fold",
+                "text": "Fold"
+              },
+              {
+                "key": "call",
+                "text": "Call"
+              },
+              {
+                "key": "raise",
+                "text": "Check-raise"
+              }
             ],
             "correct": "call",
             "marcDid": "call",
@@ -622,16 +1039,31 @@
         },
         {
           "name": "River",
-          "board": ["Qx", "7x", "6x", "5c", "2c"],
+          "board": [
+            "Qd",
+            "7c",
+            "6s",
+            "5c",
+            "2c"
+          ],
           "pot": "$380",
           "action": "Marc checks. The cutoff fires a third barrel: $125.",
           "decision": {
             "id": "e1h8-river",
             "question": "Triple barrel, but small: $125 into $380. You have top pair, weak kicker. What's the play?",
             "options": [
-              { "key": "fold", "text": "Fold" },
-              { "key": "call", "text": "Call" },
-              { "key": "raise", "text": "Raise" }
+              {
+                "key": "fold",
+                "text": "Fold"
+              },
+              {
+                "key": "call",
+                "text": "Call"
+              },
+              {
+                "key": "raise",
+                "text": "Raise"
+              }
             ],
             "correct": "call",
             "marcDid": "call",
@@ -646,14 +1078,27 @@
       "title": "Double-board PLO bomb pot (bonus hand)",
       "kind": "quiz",
       "setup": {
-        "hero": { "pos": "MP", "cards": ["As", "5s", "8h", "4h"], "label": "A♠5♠8♥4♥ (four cards, PLO)" },
+        "hero": {
+          "pos": "MP",
+          "cards": [
+            "As",
+            "5s",
+            "8h",
+            "4h"
+          ],
+          "label": "A♠5♠8♥4♥ (four cards, PLO)"
+        },
         "villain": "An early-position player",
         "note": "Double-board bomb pot: everyone puts in $25, four cards each, two boards, split pot. Marc wasn't sure whether to keep these in the vlogs."
       },
       "streets": [
         {
           "name": "Flop",
-          "board": ["3s", "4s", "2s"],
+          "board": [
+            "3s",
+            "4s",
+            "2s"
+          ],
           "boardNote": "Board 1: 3-4-2 with three spades, Marc has the straight flush (A-2-3-4-5). Board 2: K-2-6 with two clubs, Marc has only a gutshot.",
           "pot": "the bomb pot",
           "action": "It checks to Marc with several players still behind.",
@@ -661,8 +1106,14 @@
             "id": "e1h9-flop",
             "question": "You have one board completely locked up and almost nothing on the other. It checks to you with players behind. What's the play?",
             "options": [
-              { "key": "check", "text": "Check" },
-              { "key": "bet", "text": "Bet" }
+              {
+                "key": "check",
+                "text": "Check"
+              },
+              {
+                "key": "bet",
+                "text": "Bet"
+              }
             ],
             "correct": "bet",
             "marcDid": "check",
@@ -677,7 +1128,14 @@
       "title": "Pocket deuces, 600 big blinds deep: Marc's favorite line",
       "kind": "quiz",
       "setup": {
-        "hero": { "pos": "CO", "cards": ["2x", "2x"], "label": "Pocket deuces" },
+        "hero": {
+          "pos": "CO",
+          "cards": [
+            "2c",
+            "2d"
+          ],
+          "label": "Pocket deuces"
+        },
         "villain": "Under the gun: the recreational player who came to the table already up. About $3,100 effective, over 600 big blinds.",
         "note": "Marc finally has a stack to play with."
       },
@@ -690,9 +1148,18 @@
             "id": "e1h10-pre",
             "question": "A rec opens, you have 22, and you're 600 big blinds deep. What's the play?",
             "options": [
-              { "key": "fold", "text": "Fold" },
-              { "key": "call", "text": "Call" },
-              { "key": "threebet", "text": "3-bet to $80" }
+              {
+                "key": "fold",
+                "text": "Fold"
+              },
+              {
+                "key": "call",
+                "text": "Call"
+              },
+              {
+                "key": "threebet",
+                "text": "3-bet to $80"
+              }
             ],
             "correct": "threebet",
             "marcDid": "threebet",
@@ -701,7 +1168,11 @@
         },
         {
           "name": "Flop",
-          "board": ["6x", "6x", "9x"],
+          "board": [
+            "6s",
+            "6h",
+            "9d"
+          ],
           "boardNote": "rainbow",
           "pot": "~$170",
           "action": "Villain checks.",
@@ -709,10 +1180,22 @@
             "id": "e1h10-flop",
             "question": "3-bet pot, paired rainbow board, villain checks. You have deuces. What's the play?",
             "options": [
-              { "key": "check", "text": "Check back" },
-              { "key": "third", "text": "Bet about a third with your whole range" },
-              { "key": "twothirds", "text": "Bet two thirds" },
-              { "key": "pot", "text": "Bet pot" }
+              {
+                "key": "check",
+                "text": "Check back"
+              },
+              {
+                "key": "third",
+                "text": "Bet about a third with your whole range"
+              },
+              {
+                "key": "twothirds",
+                "text": "Bet two thirds"
+              },
+              {
+                "key": "pot",
+                "text": "Bet pot"
+              }
             ],
             "correct": "third",
             "marcDid": "third",
@@ -721,15 +1204,26 @@
         },
         {
           "name": "Turn",
-          "board": ["6x", "6x", "9x", "Tc"],
+          "board": [
+            "6s",
+            "6h",
+            "9d",
+            "Tc"
+          ],
           "pot": "~$280",
           "action": "Villain checks.",
           "decision": {
             "id": "e1h10-turn",
             "question": "Villain check-called the small flop bet and checks the turn. What now with 22?",
             "options": [
-              { "key": "check", "text": "Check back" },
-              { "key": "bet", "text": "Barrel" }
+              {
+                "key": "check",
+                "text": "Check back"
+              },
+              {
+                "key": "bet",
+                "text": "Barrel"
+              }
             ],
             "correct": "check",
             "marcDid": "check",
@@ -738,16 +1232,31 @@
         },
         {
           "name": "River",
-          "board": ["6x", "6x", "9x", "Tc", "Kx"],
+          "board": [
+            "6s",
+            "6h",
+            "9d",
+            "Tc",
+            "Ks"
+          ],
           "pot": "~$280",
           "action": "Villain bets $125, less than half pot.",
           "decision": {
             "id": "e1h10-river",
             "question": "Villain called the small flop bet, saw the turn check through, and now bets $125 on a king river. You have 22. What's the play?",
             "options": [
-              { "key": "fold", "text": "Fold" },
-              { "key": "call", "text": "Call" },
-              { "key": "raise", "text": "Bluff-raise" }
+              {
+                "key": "fold",
+                "text": "Fold"
+              },
+              {
+                "key": "call",
+                "text": "Call"
+              },
+              {
+                "key": "raise",
+                "text": "Bluff-raise"
+              }
             ],
             "correct": "call",
             "marcDid": "call",
@@ -762,7 +1271,14 @@
       "title": "Pocket threes from the small blind, 3-bet pot, monotone flop",
       "kind": "quiz",
       "setup": {
-        "hero": { "pos": "SB", "cards": ["3c", "3x"], "label": "Pocket threes (one is the 3♣)" },
+        "hero": {
+          "pos": "SB",
+          "cards": [
+            "3c",
+            "3d"
+          ],
+          "label": "Pocket threes"
+        },
         "villain": "Button: the same recreational player. About $3,400 effective.",
         "note": "Super deep."
       },
@@ -775,9 +1291,18 @@
             "id": "e1h11-pre",
             "question": "Button opens, you're in the small blind with pocket threes, very deep. What's the play?",
             "options": [
-              { "key": "fold", "text": "Fold" },
-              { "key": "call", "text": "Call" },
-              { "key": "threebet", "text": "3-bet big" }
+              {
+                "key": "fold",
+                "text": "Fold"
+              },
+              {
+                "key": "call",
+                "text": "Call"
+              },
+              {
+                "key": "threebet",
+                "text": "3-bet big"
+              }
             ],
             "correct": "threebet",
             "marcDid": "threebet",
@@ -786,7 +1311,11 @@
         },
         {
           "name": "Flop",
-          "board": ["2c", "8c", "Tc"],
+          "board": [
+            "2c",
+            "8c",
+            "Tc"
+          ],
           "boardNote": "all clubs",
           "pot": "~$265",
           "action": "Marc is first to act, out of position.",
@@ -794,8 +1323,14 @@
             "id": "e1h11-flop",
             "question": "3-bet pot, monotone flop, you have 33 with the 3♣ and you're out of position. What's the play?",
             "options": [
-              { "key": "bet", "text": "C-bet" },
-              { "key": "check", "text": "Check" }
+              {
+                "key": "bet",
+                "text": "C-bet"
+              },
+              {
+                "key": "check",
+                "text": "Check"
+              }
             ],
             "correct": "check",
             "marcDid": "check",
@@ -804,16 +1339,30 @@
         },
         {
           "name": "Turn",
-          "board": ["2c", "8c", "Tc", "3h"],
+          "board": [
+            "2c",
+            "8c",
+            "Tc",
+            "3h"
+          ],
           "pot": "~$265",
           "action": "Marc turns a set.",
           "decision": {
             "id": "e1h11-turn",
             "question": "You turned a set on a three-flush board after the flop checked through. First to act. What's the play?",
             "options": [
-              { "key": "check", "text": "Check, go for the check-raise" },
-              { "key": "small", "text": "Bet small, about $90" },
-              { "key": "over", "text": "Overbet $300" }
+              {
+                "key": "check",
+                "text": "Check, go for the check-raise"
+              },
+              {
+                "key": "small",
+                "text": "Bet small, about $90"
+              },
+              {
+                "key": "over",
+                "text": "Overbet $300"
+              }
             ],
             "correct": "over",
             "marcDid": "over",
@@ -822,7 +1371,13 @@
         },
         {
           "name": "River",
-          "board": ["2c", "8c", "Tc", "3h", "4c"],
+          "board": [
+            "2c",
+            "8c",
+            "Tc",
+            "3h",
+            "4c"
+          ],
           "boardNote": "a fourth club",
           "pot": "~$865",
           "action": "Marc is first to act. He holds the 3♣.",
@@ -830,8 +1385,14 @@
             "id": "e1h11-river",
             "question": "Fourth club on the river. You have a set and a baby flush with the 3♣. What's the play?",
             "options": [
-              { "key": "bet", "text": "Bet for value" },
-              { "key": "check", "text": "Check" }
+              {
+                "key": "bet",
+                "text": "Bet for value"
+              },
+              {
+                "key": "check",
+                "text": "Check"
+              }
             ],
             "correct": "check",
             "marcDid": "check",
@@ -846,7 +1407,14 @@
       "title": "Q♥9♥ flops top two, four ways",
       "kind": "quiz",
       "setup": {
-        "hero": { "pos": "CO", "cards": ["Qh", "9h"], "label": "Q♥9♥" },
+        "hero": {
+          "pos": "CO",
+          "cards": [
+            "Qh",
+            "9h"
+          ],
+          "label": "Q♥9♥"
+        },
         "villain": "Button (main villain), with the small blind and big blind also in. Button has about $380 behind going to the turn.",
         "note": "One player randomly straddled this hand."
       },
@@ -858,7 +1426,11 @@
         },
         {
           "name": "Flop",
-          "board": ["Qx", "5x", "9x"],
+          "board": [
+            "Qs",
+            "5s",
+            "9c"
+          ],
           "boardNote": "two spades, a wet board",
           "pot": "~$160",
           "action": "Marc flops top two pair. The small blind and big blind check. Marc is next, with only the button behind him.",
@@ -866,8 +1438,14 @@
             "id": "e1h12-flop",
             "question": "Top two on a wet board, four ways, with one player behind you. Your MO multiway is to check. What's the play here?",
             "options": [
-              { "key": "check", "text": "Check, as usual multiway" },
-              { "key": "bet", "text": "Bet" }
+              {
+                "key": "check",
+                "text": "Check, as usual multiway"
+              },
+              {
+                "key": "bet",
+                "text": "Bet"
+              }
             ],
             "correct": "bet",
             "marcDid": "bet",
@@ -876,7 +1454,12 @@
         },
         {
           "name": "Turn",
-          "board": ["Qx", "5x", "9x", "8d"],
+          "board": [
+            "Qs",
+            "5s",
+            "9c",
+            "8d"
+          ],
           "boardNote": "the 8♦ puts 6-7 and J-T straights on the board",
           "pot": "~$290 · the button has about $380 left",
           "action": "Marc is first to act.",
@@ -884,9 +1467,18 @@
             "id": "e1h12-turn",
             "question": "Not the best card: 67 and JT got there. The button has about $380 behind into a $290 pot. What's the play?",
             "options": [
-              { "key": "check", "text": "Check" },
-              { "key": "small", "text": "Bet about $100" },
-              { "key": "jam", "text": "Shove" }
+              {
+                "key": "check",
+                "text": "Check"
+              },
+              {
+                "key": "small",
+                "text": "Bet about $100"
+              },
+              {
+                "key": "jam",
+                "text": "Shove"
+              }
             ],
             "correct": "jam",
             "marcDid": "jam",

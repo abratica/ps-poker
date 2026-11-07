@@ -1,7 +1,7 @@
 // App shell and data are cached; everything is fetched fresh when online and
 // falls back to the last copy when offline.
-const CACHE = "psp-v3";
-const SHELL = ["./", "index.html", "styles.css?v=3", "app.js?v=3", "manifest.webmanifest", "brand/logo-mark.svg", "icons/ps-icon-192.png", "icons/ps-icon-512.png", "fonts/manrope-latin-500-normal.woff2", "fonts/manrope-latin-600-normal.woff2", "fonts/manrope-latin-700-normal.woff2", "fonts/manrope-latin-800-normal.woff2", "fonts/barlow-condensed-latin-500-normal.woff2", "fonts/barlow-condensed-latin-600-normal.woff2", "fonts/barlow-condensed-latin-700-normal.woff2", "fonts/archivo-black-latin-400-normal.woff2", "data/curriculum.json", "data/episodes/index.json", "data/episodes/ep01.json"];
+const CACHE = "psp-v4";
+const SHELL = ["./", "index.html", "styles.css?v=4", "app.js?v=4", "manifest.webmanifest", "brand/logo-mark.svg", "icons/ps-icon-192.png", "icons/ps-icon-512.png", "fonts/manrope-latin-500-normal.woff2", "fonts/manrope-latin-600-normal.woff2", "fonts/manrope-latin-700-normal.woff2", "fonts/manrope-latin-800-normal.woff2", "fonts/playfair-display-latin-600-normal.woff2", "fonts/playfair-display-latin-700-normal.woff2", "fonts/playfair-display-latin-800-normal.woff2", "fonts/cinzel-latin-600-normal.woff2", "fonts/cinzel-latin-700-normal.woff2", "data/curriculum.json", "data/episodes/index.json", "data/episodes/ep01.json"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));

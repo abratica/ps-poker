@@ -59,7 +59,7 @@ Cards: rank + suit, e.g. `"Td"`, `"As"`. Rank `T` renders as 10. Unknown suit: `
 
 Rules for extraction:
 
-- Only facts the transcript states. If a card, size or suit isn't stated, mark it unknown (`x`, `?`) or describe it in words. Never invent it.
+- Ranks, actions, sizes and results come from the transcript. Suits the video doesn't state are assigned so the hand looks real, but always consistent with what IS stated ("rainbow", "two spades", a shown hand, a flush completing). A card whose rank isn't stated (a "blank" turn) gets a plausible blank that changes nothing. Keep `boardNote` for texture words like rainbow or two hearts.
 - `correct` is the line Marc endorses. When he says his own play was a mistake, `marcDid` is his play and `correct` is what he says he should have done. The app shows both.
 - Decision points are Marc's own decisions where he explains his thinking. Forced spots and auto-folds are described in `action` and play through.
 - Options are shuffled by the app at display time, so write them in natural order.

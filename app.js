@@ -150,11 +150,11 @@
           <div class="bar"><span style="width:${pct(epsDone, idx.episodes.length)}%"></span></div>
           <span class="arrow">›</span>
         </a>
-        <a class="tile gold" href="#/curriculum">
+        <a class="tile felt-rail" href="#/curriculum">
           <p class="eyebrow">Course</p>
           <h2>Curriculum</h2>
           <p class="sub">${lessonsDone} of ${lessons.length} lessons done · modules 1.1 and 1.2 open</p>
-          <div class="bar gold"><span style="width:${pct(lessonsDone, lessons.length)}%"></span></div>
+          <div class="bar felt"><span style="width:${pct(lessonsDone, lessons.length)}%"></span></div>
           <span class="arrow">›</span>
         </a>
       </div>
@@ -245,7 +245,7 @@
         <div class="hero-label">${esc(hand.setup.hero.label)}</div>
       </div>
       <div class="label" style="margin-top:14px">Board${street.name && !/preflop/i.test(street.name) ? " · " + esc(street.name.replace(/\s*\(.*\)/, "")) : ""}</div>
-      <div class="board">${board.length ? board.map((c) => card(c)).join("") : '<span class="small" style="color:rgba(247,244,238,.6)">No cards yet</span>'}</div>
+      <div class="board-cards">${board.length ? board.map((c) => card(c)).join("") : '<span class="small" style="color:rgba(247,244,238,.6)">No cards yet</span>'}</div>
       ${street.boardNote ? `<div class="board-note">${esc(street.boardNote)}</div>` : ""}
       ${street.pot ? `<div class="pot"><span class="label">Pot</span><b>${esc(street.pot)}</b></div>` : ""}
     </div>`;
