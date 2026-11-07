@@ -1,0 +1,25 @@
+{
+  "series": "$100/hr at Low Stakes",
+  "description": "Marc's $5/5 challenge at Hustler Casino. Play every hand street by street: decide first, then see what Marc did and why.",
+  "episodes": [
+    { "id": 1, "title": "Can I make $100 an hour at $5/5?", "subtitle": "Session 1 · Hustler", "file": "ep01.json", "available": true },
+    { "id": 2, "title": "Episode 2", "subtitle": "Session 2", "available": false },
+    { "id": 3, "title": "Episode 3", "subtitle": "Session 3", "available": false },
+    { "id": 4, "title": "Episode 4", "subtitle": "Session 4", "available": false },
+    { "id": 5, "title": "Episode 5", "subtitle": "Session 5", "available": false },
+    { "id": 6, "title": "Episode 6", "subtitle": "Session 6", "available": false },
+    { "id": 7, "title": "Episode 7", "subtitle": "Session 7", "available": false },
+    { "id": 8, "title": "Episode 8", "subtitle": "Session 8", "available": false },
+    { "id": 9, "title": "Episode 9", "subtitle": "Session 9", "available": false },
+    { "id": 10, "title": "Episode 10", "subtitle": "Session 10", "available": false },
+    { "id": 11, "title": "Episode 11", "subtitle": "Session 11", "available": false },
+    { "id": 12, "title": "Episode 12", "subtitle": "Session 12", "available": false },
+    { "id": 13, "title": "Episode 13", "subtitle": "Session 13", "available": false },
+    { "id": 14, "title": "Episode 14", "subtitle": "Session 14", "available": false },
+    { "id": 15, "title": "Episode 15", "subtitle": "Session 15", "available": false },
+    { "id": 16, "title": "Episode 16", "subtitle": "Session 16", "available": false },
+    { "id": 17, "title": "Episode 17", "subtitle": "Session 17", "available": false },
+    { "id": 18, "title": "Episode 18", "subtitle": "Session 18", "available": false },
+    { "id": 19, "title": "Episode 19", "subtitle": "Session 19", "available": false }
+  ]
+}

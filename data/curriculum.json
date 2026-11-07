@@ -1,0 +1,996 @@
+{
+  "title": "The Thought Process Curriculum",
+  "intro": "Six phases, built from Marc's videos. Each module is a few phone-sized lessons: a short read, then a drill. Answer before you read the reasoning.",
+  "phases": [
+    {
+      "id": "p1",
+      "number": 1,
+      "title": "Foundation",
+      "tagline": "Why process beats results",
+      "modules": [
+        {
+          "id": "1.1",
+          "title": "The Mindset Shift",
+          "summary": "Process vs results, what actually predicts success, and the things that don't matter.",
+          "sources": [
+            { "title": "Why I don't care if I win (and why you shouldn't either)", "url": "https://www.youtube.com/watch?v=jC5-F7M4nuo" },
+            { "title": "We Coached 700 Players. One Trait Separated the Winners.", "url": "https://www.youtube.com/watch?v=3jOGVipw2jQ" },
+            { "title": "Everything You Think Matters in Poker…Doesn't", "url": "https://www.youtube.com/watch?v=FgMQs1NENpA" }
+          ],
+          "homework": "Process journal for your next Encore session: write down your 3 best decisions and your 3 worst. No dollar amounts, no results. Only the thinking.",
+          "lessons": [
+            {
+              "id": "1.1.1",
+              "title": "Process vs results",
+              "minutes": 4,
+              "concept": [
+                "You can't control your results. You can control your decisions. Marc's line: losing can be great poker and winning can be terrible poker.",
+                "After coaching hundreds of players, the split is clear. Great players can lose a big pot and be happy with how they played it, or win a huge pot and be disgusted with how they played it. Players who stay stuck judge every hand by whether they won.",
+                "## The four boxes",
+                "Every hand lands in one of four boxes: good process with a good result, good process with a bad result, bad process with a good result, bad process with a bad result. Only the process column is worth your attention. Results are variance wearing a costume.",
+                "## Good process, bad result",
+                "Brian Kim, $100/200/400. He opens KK, Bill Klein calls in the straddle. Flop T-5-4 with two hearts, Brian bets two thirds, Bill calls. Turn 5, Brian bets two thirds, Bill calls. River 5. Bill leads pot. Brian reads it as Tx getting greedy and raises for thin value. Bill 3-bets all in. Now a ten never does this, and a bricked flush draw doesn't donk pot and then 3-bet. Marc's bank robber analogy: the guy in the suit and the Rolex just pulled out a ski mask. Brian folds. Bill shows AK, total air. Every street of that was good process. The result was bad.",
+                "## Bad process, good result",
+                "Phil Hellmuth, in a tournament. Button min-opens, Hellmuth 3-bets Q4 offsuit to nearly 40% of his stack, gets jammed on, and is priced in to call. He never planned a size he could fold to. Flop Q-K-7, river Q, he wins with trips. Bad process, good result. The money went in his stack, and it teaches him nothing.",
+                "## The one that matters for you",
+                "Marc, $5/5 challenge. He opens KK to $25, gets 3-bet to $75 by a player who hadn't 3-bet all day. He 4-bets to $250 for value. Villain 5-bets to $600, leaving himself about $800 behind: 40% of his stack in, a click, not a jam. Marc reads it: queens and AK either call the 4-bet or just shove so they don't have to think anymore. The click to $600 is a player who has waited fourteen hours for aces and doesn't want the other guy to fold. Marc folds kings. Villain shows 9-8 of clubs. Marc's verdict: good process, bad result, and he'd make the same fold against 99.9% of low-stakes players.",
+                "> The result tells you nothing about whether the hand was played well. Judge the decision, not the outcome."
+              ],
+              "drill": {
+                "intro": "Classify each hand. Which box does it land in?",
+                "questions": [
+                  {
+                    "id": "1.1.1-q1",
+                    "prompt": "$1/3, $600 effective. You open KK to $12 under the gun. A tight rec who hasn't 3-bet all night makes it $35. You 4-bet to $110. He clicks it back to $260, leaving about $500 behind. He never has to think here with QQ or AK: those hands call or shove. You fold. He shows 9♣8♣.",
+                    "options": [
+                      { "key": "a", "text": "Good process, good result" },
+                      { "key": "b", "text": "Good process, bad result" },
+                      { "key": "c", "text": "Bad process, good result" },
+                      { "key": "d", "text": "Bad process, bad result" }
+                    ],
+                    "correct": "b",
+                    "explain": "Same spot as Marc's. A 5-bet click that leaves 40% of a stack behind from a player who never 3-bets is aces almost every time. The fold was right. The one time he has 98 of clubs doesn't change that."
+                  },
+                  {
+                    "id": "1.1.1-q2",
+                    "prompt": "$1/3. Villain is a calling station who has called down three triple-barrels tonight and shown bluff catchers each time. You get to the river with air and shove $350 into $180. He folds JJ face up.",
+                    "options": [
+                      { "key": "a", "text": "Good process, good result" },
+                      { "key": "b", "text": "Good process, bad result" },
+                      { "key": "c", "text": "Bad process, good result" },
+                      { "key": "d", "text": "Bad process, bad result" }
+                    ],
+                    "correct": "c",
+                    "explain": "You had the information that this player doesn't fold, and you bluffed him for everything anyway. The fold you got doesn't make it a good decision. Against a station the exploit is thin value, not big bluffs."
+                  },
+                  {
+                    "id": "1.1.1-q3",
+                    "prompt": "$1/3. You defend the big blind, check-call a small flop bet, and the turn goes check-check. River, you check, and villain in position bets $25 into $90. Small size, in position, after checking back the turn. You call with second pair. He shows a missed gutshot.",
+                    "options": [
+                      { "key": "a", "text": "Good process, good result" },
+                      { "key": "b", "text": "Good process, bad result" },
+                      { "key": "c", "text": "Bad process, good result" },
+                      { "key": "d", "text": "Bad process, bad result" }
+                    ],
+                    "correct": "a",
+                    "explain": "Small river bets after a turn check-back are where the too-wide flop floats go to bluff. Good price, gave him rope, small size. Calling is right, and this time it also won."
+                  },
+                  {
+                    "id": "1.1.1-q4",
+                    "prompt": "$1/3, $300 effective. The button opens to $10. You 3-bet Q4 offsuit from the big blind to $110, over a third of your stack. He shoves. You're priced in and call. He has 99. The board bricks. You lose.",
+                    "options": [
+                      { "key": "a", "text": "Good process, good result" },
+                      { "key": "b", "text": "Good process, bad result" },
+                      { "key": "c", "text": "Bad process, good result" },
+                      { "key": "d", "text": "Bad process, bad result" }
+                    ],
+                    "correct": "d",
+                    "explain": "Hellmuth's hand without the river queen. A polarized 3-bet needs a size you can fold to. Putting in a third of your stack with Q4 means you've committed yourself before you know anything. Bad process, and this time the result matched."
+                  },
+                  {
+                    "id": "1.1.1-q5",
+                    "prompt": "$1/3, three ways in position with K♣J♣ on an A-high flop with two clubs. You bet small, one rec calls. You barrel the turn, he calls. The river is a club: your flush bricks, but the front-door flush is now on board, you've bet into multiple people on an ace-high board, and you hold the K♣. You bet 70% pot. He calls with a rivered trips hand nobody could see coming.",
+                    "options": [
+                      { "key": "a", "text": "Good process, good result" },
+                      { "key": "b", "text": "Good process, bad result" },
+                      { "key": "c", "text": "Bad process, good result" },
+                      { "key": "d", "text": "Bad process, bad result" }
+                    ],
+                    "correct": "b",
+                    "explain": "This is the Doug Polk KJ hand scaled down. Starting the bluff multiway with the K♣, barreling, and firing when the obvious draw comes in against a weak Ax range is good process. He found a miracle. Nothing to fix."
+                  },
+                  {
+                    "id": "1.1.1-q6",
+                    "prompt": "$1/3. You know this villain is sticky and loves to bluff when checked to. You have ace-high on Q-3-3. You c-bet, he calls. Turn 4, you barrel again. He calls. River, you jam for 40% pot with ace-high. He calls with a worse ace-high. You win.",
+                    "options": [
+                      { "key": "a", "text": "Good process, good result" },
+                      { "key": "b", "text": "Good process, bad result" },
+                      { "key": "c", "text": "Bad process, good result" },
+                      { "key": "d", "text": "Bad process, bad result" }
+                    ],
+                    "correct": "c",
+                    "explain": "Martin's hand from the video. Against a player who won't fold and will bluff when you check, ace-high wants to check and bluff-catch, not barrel three streets. A 40% pot river jam folds out nothing he arrived with. He paid you off with a worse bluff catcher. That's luck, not a plan."
+                  },
+                  {
+                    "id": "1.1.1-q7",
+                    "prompt": "$2/5. The one strong reg at your table opens. You 3-bet KK small, to a size that doesn't represent a polarized range. Flop T-9-4 with two diamonds, you c-bet two thirds even though you can't have TT, 99 or T9 in this configuration. Turn 3, you overbet. He raises small. You fold. He shows J♣T♣.",
+                    "options": [
+                      { "key": "a", "text": "Good process, good result" },
+                      { "key": "b", "text": "Good process, bad result" },
+                      { "key": "c", "text": "Bad process, good result" },
+                      { "key": "d", "text": "Bad process, bad result" }
+                    ],
+                    "correct": "d",
+                    "explain": "Marc's own hand against Zo. He rips every street of it: the 3-bet size, the flop size, the turn size, all built for a recreational player while facing the one player who would take advantage. The fold at the end was the only good decision. Bad process, bad result."
+                  },
+                  {
+                    "id": "1.1.1-q8",
+                    "prompt": "$2/5, $1,800 effective. A fish opens, you 3-bet 8♠7♠ on the button, he calls. Flop 9-6-3, you bet a third, he check-raises, you call. Turn K♠, he checks. You read him as capped on overpairs, so you bet small enough that JJ can't fold. River Q♠ gives you a backdoor flush. He checks. You bet small for a crying call. He calls with JJ.",
+                    "options": [
+                      { "key": "a", "text": "Good process, good result" },
+                      { "key": "b", "text": "Good process, bad result" },
+                      { "key": "c", "text": "Bad process, good result" },
+                      { "key": "d", "text": "Bad process, bad result" }
+                    ],
+                    "correct": "a",
+                    "explain": "Alex's hand from the high-stakes-vs-low-stakes video. Range him fast (overpairs once the sets would have kept betting), size to keep those hands in, then size down again for the crying call. Good process that also got paid."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "1.1.2",
+              "title": "What actually predicts success",
+              "minutes": 4,
+              "concept": [
+                "Marc and Gethin put their own money behind 25 players in a stable. They screened for intelligence and natural talent and kept picking the wrong guys. The ones who looked good on paper quit at their first downswing.",
+                "## The six-second test",
+                "They replaced their elaborate tests with one question: can you see all the gutshots on J-7-2 in under five seconds? If yes, you had a chance. It isn't about the gutshots. It's a pattern interrupt. Poker is a guy cold-calling your 3-bet and donking the flop, something you haven't studied, and you have five seconds to adapt. The ones who could re-orient fast under an unexpected question could re-orient at the table.",
+                "## The three traits",
+                "- Seeing things quickly.",
+                "- Being self-aware: knowing what you're bad at and spending your time there, not polishing what's already good.",
+                "- Actually showing up and putting in effort.",
+                "## Alex",
+                "The stable's highest earner came in winning $25 an hour at $2/5. He'll tell you he wasn't the smartest guy in the group. He struggled for six months with risk aversion and getting flustered when pots got big. When he fixed that, he swung too far and bluffed everything. It wasn't a clean progression. He kept working through the stops and starts, and he went from $2/5 to $5/10 to $10/20/40 and is still crushing.",
+                "## There is no Hungry Horse strategy",
+                "People say the Hungry Horse strategy is \"bluff big, value bet small.\" Gethin's answer: if that were it, they'd have saved two years of work. The strategy is asking better questions. They gave the stable a 117-page guide to follow and it didn't work, because a strategy gives people permission to stop thinking. The player knows the guy is trappy, the guide says overbet the capped blank turn, and he overbets into the trap.",
+                "> Perfection doesn't arrive on day six. Progress is: can I think a little better than I did last week?"
+              ],
+              "drill": {
+                "intro": "The gutshot speed test. Pick the hand that has a gutshot (one card to a straight, four outs) on this flop. Go fast.",
+                "questions": [
+                  {
+                    "id": "1.1.2-q1",
+                    "prompt": "Flop: J♠ 7♥ 2♦. Which hand has a gutshot?",
+                    "options": [
+                      { "key": "a", "text": "T9" },
+                      { "key": "b", "text": "KQ" },
+                      { "key": "c", "text": "65" },
+                      { "key": "d", "text": "A3" }
+                    ],
+                    "correct": "a",
+                    "explain": "T9 needs exactly an 8 for 7-8-9-T-J. KQ needs two cards. 65 and A3 need two cards. On J-7-2 the three gutshots are T9, T8 and 98."
+                  },
+                  {
+                    "id": "1.1.2-q2",
+                    "prompt": "Flop: J♠ 7♥ 2♦ again. How many different two-card hands have a gutshot?",
+                    "options": [
+                      { "key": "a", "text": "2" },
+                      { "key": "b", "text": "3" },
+                      { "key": "c", "text": "4" },
+                      { "key": "d", "text": "5" }
+                    ],
+                    "correct": "b",
+                    "explain": "T9 (needs an 8), T8 (needs a 9), 98 (needs a T). That's the whole list. This is the question Gethin asked every stable applicant."
+                  },
+                  {
+                    "id": "1.1.2-q3",
+                    "prompt": "Flop: Q♦ 8♣ 4♠. Which hand has a gutshot?",
+                    "options": [
+                      { "key": "a", "text": "KJ" },
+                      { "key": "b", "text": "A5" },
+                      { "key": "c", "text": "76" },
+                      { "key": "d", "text": "T7" }
+                    ],
+                    "correct": "c",
+                    "explain": "76 with the 8 and 4 needs exactly a 5 for 4-5-6-7-8. KJ needs two cards (T and 9 or A and T). A5 and T7 don't have a one-card straight draw."
+                  },
+                  {
+                    "id": "1.1.2-q4",
+                    "prompt": "Flop: K♥ 9♠ 3♦. Which hand has a gutshot?",
+                    "options": [
+                      { "key": "a", "text": "A2" },
+                      { "key": "b", "text": "87" },
+                      { "key": "c", "text": "QJ" },
+                      { "key": "d", "text": "54" }
+                    ],
+                    "correct": "c",
+                    "explain": "QJ with the K and 9 needs exactly a T for 9-T-J-Q-K. The others all need two cards."
+                  },
+                  {
+                    "id": "1.1.2-q5",
+                    "prompt": "Flop: T♣ 5♠ 2♥. Which hand has a gutshot?",
+                    "options": [
+                      { "key": "a", "text": "KQ" },
+                      { "key": "b", "text": "98" },
+                      { "key": "c", "text": "76" },
+                      { "key": "d", "text": "A4" }
+                    ],
+                    "correct": "d",
+                    "explain": "A4 with the 5 and 2 needs exactly a 3 for the wheel, A-2-3-4-5. Easy to miss because the ace is playing low. 98 and 76 each need two cards."
+                  },
+                  {
+                    "id": "1.1.2-q6",
+                    "prompt": "Flop: A♠ 8♦ 3♣. Which hand has a gutshot?",
+                    "options": [
+                      { "key": "a", "text": "T9" },
+                      { "key": "b", "text": "54" },
+                      { "key": "c", "text": "K2" },
+                      { "key": "d", "text": "76" }
+                    ],
+                    "correct": "b",
+                    "explain": "54 with the A and 3 needs exactly a 2 for A-2-3-4-5. The ace counts as the low end. T9 and 76 each need two cards, and K2 has nothing."
+                  },
+                  {
+                    "id": "1.1.2-q7",
+                    "prompt": "Flop: 9♣ 6♦ 2♠. Which hand has a gutshot?",
+                    "options": [
+                      { "key": "a", "text": "KQ" },
+                      { "key": "b", "text": "A5" },
+                      { "key": "c", "text": "T8" },
+                      { "key": "d", "text": "J7" }
+                    ],
+                    "correct": "c",
+                    "explain": "T8 with the 9 and 6 needs exactly a 7 for 6-7-8-9-T. J7 needs two cards. A5 needs two cards for the wheel. KQ has nothing."
+                  },
+                  {
+                    "id": "1.1.2-q8",
+                    "prompt": "Flop: K♦ 8♠ 4♥. How many different two-card hands have a gutshot?",
+                    "options": [
+                      { "key": "a", "text": "2" },
+                      { "key": "b", "text": "3" },
+                      { "key": "c", "text": "4" },
+                      { "key": "d", "text": "6" }
+                    ],
+                    "correct": "b",
+                    "explain": "The king is too far away from the 8 to help any straight, so it's all around the 8 and 4: 76 (needs a 5), 75 (needs a 6), 65 (needs a 7). Three."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "1.1.3",
+              "title": "Everything you think matters doesn't",
+              "minutes": 5,
+              "concept": [
+                "Marc's list of things his students thought were critical before they learned to crush, and why none of it moves the needle if the goal is making the most money.",
+                "## Bankroll (for 99% of players)",
+                "Bankroll is a bucket with holes in it. Pouring in more water doesn't fix the holes. The holes are your decisions. If you had the skills to build and keep a roll, you'd have one. Prioritize skills over the roll, and if you have a job outside poker, the roll is refillable. Your time isn't.",
+                "## \"Correct\" solver sizes",
+                "A solver never bets $150 in position on a river because it fears thin check-raises and bluff-raises. Tell the solver your opponent won't turn J7 into a bluff and it prefers the small size immediately. The size is correct against the opponent in front of you, not the one in the sim. Against limping Larry, who only raises JJ+ and AK from early position, 3-bet your aces to an egregious size. Everyone else at the table can know what you have. Larry's the one who's calling.",
+                "## Needing bluffs everywhere",
+                "In equilibrium your 75 of hearts is a river bluff that's supposed to fold out ace-high flushes. Is the average opponent folding the nut flush for $600 more? No. So you don't need bluffs there. You don't need to be balanced because your opponent isn't.",
+                "## \"I have to\"",
+                "\"I have to call, I'm top of my range.\" Why? Is someone holding a musket to your head? If his jam is never a bluff, top of your range is just a bluff catcher that loses.",
+                "## A preset strategy",
+                "\"I'm going to play tight today\" or \"I'm 3-betting wide today.\" All bad. Be water. If he checks back ten-high and says \"I missed,\" he's under-bluffing, so overfold to his river bets. If he bets small on the river with AK after a turn check-back, he's over-bluffing that line, so over-call it. If he folds AJ face up to your big bet, overbluff him. If he snaps your jam with second pair, stop bluffing him and value bet thinner. One data point is enough. You don't need a preponderance of evidence.",
+                "## Memorizing",
+                "A6 suited 4-bets 43% in position in theory. Against a small blind who only 3-bets JJ+ and AK, it doesn't. Memorized rules break the moment the opponent isn't the one in the sim.",
+                "## Fixating on your own range",
+                "\"This board is good for me, so I bet.\" Wrong frame. Ask instead: is this spot likely to get stabbed if I check? Wet and dynamic, aggressive opponent, yes, so check and let them stab. Dry and static, no, so bet yourself.",
+                "## Looking for answers",
+                "\"Should I have called?\" You'll never play that exact hand against that exact player again. Gethin: if you want right answers, play chess. If you want to learn to ask better questions, poker is your game.",
+                "## Betting to protect your hand",
+                "If your only reason to bet is protection, you're letting fear decide. Check, and the missed draws bet the river for you. You get that street anyway, and you don't fold out the worse hands that would have paid you.",
+                "## Table image, seat selection, game selection",
+                "The guy on your left was watching grandmas ride miniature horses on his phone while you punted. He doesn't know your image. What does matter is whether he is steaming. It's about them, not you. And hunting the best seat in a $1/3 room is wasted energy that should be going into watching showdowns at your own table.",
+                "> Don't choose the play that impresses the table. Choose the one that wins the most money."
+              ],
+              "drill": {
+                "intro": "Be water. Each spot gives you one piece of evidence. What's the adjustment?",
+                "questions": [
+                  {
+                    "id": "1.1.3-q1",
+                    "prompt": "$1/3. Villain barrels flop and turn, then checks back the river and shows T♣9♣ for ten-high: \"I missed, I give up.\" Next time he fires a third barrel at you, what's the adjustment?",
+                    "options": [
+                      { "key": "a", "text": "Over-call: he's shown he can bluff" },
+                      { "key": "b", "text": "Over-fold: he's under-bluffing the river" },
+                      { "key": "c", "text": "No adjustment yet, one hand isn't enough" },
+                      { "key": "d", "text": "Start 3-betting him wider preflop" }
+                    ],
+                    "correct": "b",
+                    "explain": "Ten-high is the hand that's supposed to bluff the river. If he gives up with it, his river bets are value-heavy. Fold your bluff catchers. One data point is enough to lean in, and you can reel it back if he proves otherwise."
+                  },
+                  {
+                    "id": "1.1.3-q2",
+                    "prompt": "$1/3. You 3-bet, c-bet, and check back the turn with second pair. Villain bets 40% pot on the river. You call. He shows AK: \"I missed.\" What does this tell you about his small river bets in this line?",
+                    "options": [
+                      { "key": "a", "text": "He's under-bluffing, fold more" },
+                      { "key": "b", "text": "He's over-bluffing, call more" },
+                      { "key": "c", "text": "He's value-heavy, raise more" },
+                      { "key": "d", "text": "Nothing, AK is a standard bluff there" }
+                    ],
+                    "correct": "b",
+                    "explain": "AK has showdown value in that spot and isn't supposed to be a bluff. He's monkey-betting hands that should check. When you give him rope and he goes small, he's over-bluffing. Over-call that line."
+                  },
+                  {
+                    "id": "1.1.3-q3",
+                    "prompt": "$1/3. You bet big on an ace-high river with KK. Villain folds AJ face up, almost proud of it. What's the adjustment against him?",
+                    "options": [
+                      { "key": "a", "text": "Value bet smaller so he calls" },
+                      { "key": "b", "text": "Stop bluffing him, he's sticky" },
+                      { "key": "c", "text": "Bluff him in every spot where you lack showdown value" },
+                      { "key": "d", "text": "Play tighter against him" }
+                    ],
+                    "correct": "c",
+                    "explain": "He's over-folding. He folded top pair on an ace-high board to one bet. Scared, passive players who only continue with the nuts are the ones you bluff for all the money."
+                  },
+                  {
+                    "id": "1.1.3-q4",
+                    "prompt": "$1/3. You triple-barrel and jam the river against a capped range. Villain snap-calls with T9 for second pair. What's the adjustment?",
+                    "options": [
+                      { "key": "a", "text": "Bluff bigger so he can't call" },
+                      { "key": "b", "text": "Stop big bluffs, value bet much thinner" },
+                      { "key": "c", "text": "Fold more to his bets" },
+                      { "key": "d", "text": "Nothing, second pair is a fine call" }
+                    ],
+                    "correct": "b",
+                    "explain": "He's over-calling. Put way more hands in the big size for value and dial the bluffs back. If you bluff him at all, use the tiny size."
+                  },
+                  {
+                    "id": "1.1.3-q5",
+                    "prompt": "$1/3, you 3-bet 88 in position and c-bet a 9-5-2 flop. Villain calls. Turn K. You're thinking \"I should bet to protect against his draws.\" Marc's take?",
+                    "options": [
+                      { "key": "a", "text": "Bet: protecting your hand is a valid reason" },
+                      { "key": "b", "text": "Bet big: deny equity and take it down" },
+                      { "key": "c", "text": "Check: you still win a street when his missed draws bluff the river" },
+                      { "key": "d", "text": "Fold to any river bet" }
+                    ],
+                    "correct": "c",
+                    "explain": "Betting here isn't value (9x, Tx, JJ call) and isn't a bluff. It's fear. Check, and when the river bricks his missed draws bet for you. You get the money on the river instead of the turn, and you don't fold out the hands that would have paid you."
+                  },
+                  {
+                    "id": "1.1.3-q6",
+                    "prompt": "$1/3. You just got snapped off on a big river bluff by the player in seat 3. Now you're in a hand against seat 7, who was on his phone the whole time, and you've reached a good bluffing river. Does your image matter?",
+                    "options": [
+                      { "key": "a", "text": "Yes, the whole table saw it, shut down" },
+                      { "key": "b", "text": "No, he wasn't watching. Bluff if the spot is good" },
+                      { "key": "c", "text": "Yes, but only bluff half the time now" },
+                      { "key": "d", "text": "Switch to value-only for the rest of the session" }
+                    ],
+                    "correct": "b",
+                    "explain": "Seat 7 doesn't know you were in the last hand. The player whose image matters is the one who just lost a big pot and is steaming. Don't bluff him. Everyone else is a fresh read."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "title": "The Three Core Questions",
+          "summary": "What is their range? What happens if? What would I do with the inverse? Plus the Bad Thoughts Bingo card.",
+          "sources": [
+            { "title": "I Watched Players Think Out Loud. They All Have the Same Blindspot.", "url": "https://www.youtube.com/watch?v=gc7faxBVjm8" },
+            { "title": "What High Stakes Pros See That Low Stakes Players Miss", "url": "https://www.youtube.com/watch?v=4fOKT0pRl18" },
+            { "title": "Ask THESE 3 Questions to Make $100/hr in Poker", "url": "https://www.youtube.com/watch?v=Vrqdf3aJlig" }
+          ],
+          "homework": "Write your personal thought-process card: the questions you will ask yourself on every street, in order. Five questions max. Keep it on your phone and read it before each Encore session.",
+          "lessons": [
+            {
+              "id": "1.2.1",
+              "title": "Question 1: What is their range?",
+              "minutes": 5,
+              "concept": [
+                "Marc's observation after coaching 700 players: the problem isn't what they know. They have plenty of information. The problem is they have no repeatable thought process, so when the money gets real they stop thinking and react. The process is three questions. The first one is always: what is their range?",
+                "## Big buckets, not combos",
+                "Don't get zoomed in on specific combos on the flop. Think in buckets: is their range capped or uncapped? Uncapped means they can still have the strong hands that never fold if all the money goes in. Capped means their actions so far say they don't have those hands. On the river you can usually boil a range down to three buckets. Example from the video: busted flush draws, two pair, and Qx. That's enough to make a decision.",
+                "## Carry the thread",
+                "You range them preflop. On the flop you narrow it. On the turn you narrow it again. By the river you should already know roughly what they have. You don't have time to start from scratch on the river, and the players in the Poker Out Loud footage who panic are the ones who do. Greg had 45 seconds of thoughts about the pot size and his own hand before a single relevant thought about what his opponent had.",
+                "## Recreational players tell you with their sizes",
+                "Watch the pattern in one of the players: big size when he flopped top pair, small size when he had a draw, check when he had nothing. It happens far more than you'd think. Pay attention to showdowns and sizing tells and most of the ranging is done for you.",
+                "## Logically consistent beats right",
+                "Gethin: if being right is important to you, there are better hobbies than poker. Be logically consistent. If you thought the tightest player at the table 3-bet with a strong range preflop, you can't decide on a K-7-2 flop that he probably has 7-2. If you're consistent and still wrong, that's a calibration error you can fix. Reaching into a black box every street can't be fixed.",
+                "> Low-stakes players think about their own hand and the board. High-stakes players think about what the opponent has and what the opponent is trying to do."
+              ],
+              "drill": {
+                "intro": "Range them. Capped or uncapped, and what's in the buckets?",
+                "questions": [
+                  {
+                    "id": "1.2.1-q1",
+                    "prompt": "$1/3. You open the button, a rec defends the big blind. Flop J♥9♥5♣, wet and dynamic. You bet a third, he calls. Turn 2♠, a brick. He checks. Capped or uncapped?",
+                    "options": [
+                      { "key": "a", "text": "Uncapped: he could easily have a set or two pair" },
+                      { "key": "b", "text": "Capped: strong hands would have raised the small bet on that flop" },
+                      { "key": "c", "text": "Capped: he can't have a flush draw anymore" },
+                      { "key": "d", "text": "Uncapped: recs never raise the flop" }
+                    ],
+                    "correct": "b",
+                    "explain": "On a wet, dynamic flop, players fast-play sets, two pair and J9 against a small bet because they don't want to get drawn out on. When he just calls and then checks a brick, his strong hands are mostly gone. He's full of Jx, 9x, draws. Capped and inelastic."
+                  },
+                  {
+                    "id": "1.2.1-q2",
+                    "prompt": "$1/3. You 3-bet a rec, he calls out of position. Flop A♦7♣2♠, static and dry. You bet small, he calls. Capped or uncapped?",
+                    "options": [
+                      { "key": "a", "text": "Capped: he'd raise a set here" },
+                      { "key": "b", "text": "Uncapped: on static, dry boards everyone traps" },
+                      { "key": "c", "text": "Capped: he only has ace-high or worse" },
+                      { "key": "d", "text": "Uncapped: because it's a 3-bet pot" }
+                    ],
+                    "correct": "b",
+                    "explain": "Nothing changes on this board, so there's no reason to fast-play. Players with A7, 77 or 22 just call and wait. Dry, static flops leave your opponent uncapped, which is why range-betting them for small is a bad idea: weak hands fold anyway and strong hands trap."
+                  },
+                  {
+                    "id": "1.2.1-q3",
+                    "prompt": "$1/3. Heads up in a single-raised pot, you're the preflop raiser in position. Villain donks half pot into you on the flop. Then in a separate hand, a villain donks half pot into two players in a 4-bet pot. Which is more likely to be a bluff?",
+                    "options": [
+                      { "key": "a", "text": "The 4-bet pot donk: 4-bet pots are wild" },
+                      { "key": "b", "text": "Both equally, a donk is a donk" },
+                      { "key": "c", "text": "The heads-up single-raised pot donk: those are full of it" },
+                      { "key": "d", "text": "Neither is ever a bluff" }
+                    ],
+                    "correct": "c",
+                    "explain": "Marc's rule: a donk heads up in a single-raised pot is massively over-bluffed. A donk into multiple players, or a donk in a 4-bet pot, is under-bluffed. Same action, opposite read, because the context is different."
+                  },
+                  {
+                    "id": "1.2.1-q4",
+                    "prompt": "$1/3. On the turn you had villain on \"top pair or better, or a bluff.\" On the river he bets a third of the pot in position. What's his range now?",
+                    "options": [
+                      { "key": "a", "text": "Mostly bluffs: small bets are weak" },
+                      { "key": "b", "text": "Mostly thin value, top pair that's scared of a raise" },
+                      { "key": "c", "text": "Start over, the river changes everything" },
+                      { "key": "d", "text": "Polarized: nuts or air" }
+                    ],
+                    "correct": "b",
+                    "explain": "Carry the thread. He had top-pair-plus or a bluff. A small bet in position on the river is the classic thin-value size: the hand that wants to get called by worse and doesn't want to get raised. His bluffs can just check back and not show. So the small bet leans heavily to value, usually top pair."
+                  },
+                  {
+                    "id": "1.2.1-q5",
+                    "prompt": "$1/3. Over two hours you've seen a rec bet big every time he flopped top pair, bet small with his draws, and check his air. Now he bets small on a Q-J-5 flop with two clubs. What's his range?",
+                    "options": [
+                      { "key": "a", "text": "Top pair, protecting" },
+                      { "key": "b", "text": "Draws and weak hands" },
+                      { "key": "c", "text": "Sets, slow-playing" },
+                      { "key": "d", "text": "Unknowable, the sample is too small" }
+                    ],
+                    "correct": "b",
+                    "explain": "He's told you his pattern three ways. The small bet is the draw size. You don't need a preponderance of evidence; lean into the read and adjust if he proves you wrong."
+                  },
+                  {
+                    "id": "1.2.1-q6",
+                    "prompt": "$1/3. The tightest player at the table 3-bets you. You call with AK. Flop K♠7♦2♣. You check, he bets big. Which thought is logically consistent with what you believed preflop?",
+                    "options": [
+                      { "key": "a", "text": "\"He probably has 7-2 or a bluff here\"" },
+                      { "key": "b", "text": "\"His range was QQ+ and AK, so he has an overpair, a set of kings, or a chop\"" },
+                      { "key": "c", "text": "\"He bet big, so he's weak\"" },
+                      { "key": "d", "text": "\"I have top pair top kicker, I have to raise\"" }
+                    ],
+                    "correct": "b",
+                    "explain": "Gethin's example of consistency. You ranged him tight preflop. The flop can't magically add 7-2 to that range. You may still decide to call, but the range you're calling against is the one you built preflop, narrowed by the flop."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "1.2.2",
+              "title": "Question 2: What happens if?",
+              "minutes": 5,
+              "concept": [
+                "Once you have their range, the second question is: what happens to that range if I take each of my options? Not \"what should I do,\" but \"what happens if I check, what happens if I bet small, what happens if I bet big?\" Every option, before deciding.",
+                "## This is your leak",
+                "The gap Marc sees between profitable low-stakes players and elite high-stakes players is exactly this. The low-stakes player locks onto one decision and then finds reasons to support it: \"I'm going to fold because A, B and C.\" The high-stakes player walks through each option first: \"What happens if I fold? If I call? If I raise small? If I raise big?\" and only then picks. Deciding first and justifying later is what Marc calls \"betting BECAUSE.\" Analyzing first is \"what happens IF.\"",
+                "## An example from the video",
+                "KO has top pair on a Q-high turn where a one-liner to a straight came in. Villain's range: Qx, two pair, flush draws. What happens if he bets big? Qx mostly calls, two pair calls, flush draws call. What happens if he bets small? Qx raises, two pair and draws call. What happens if he checks? Qx bets, draws might stab, two pair probably checks back. Against a stabby player, check and go for the check-raise. Against most players, the biggest size that Qx still raises and draws still call. He's torn between two options, and that's fine. He considered them all.",
+                "## Alex vs Abby",
+                "Abby ranged her opponents accurately. She put the fish on exactly pocket jacks. Then she got locked in: \"his range is X, so I'm doing Y.\" Alex did the same ranging and then kept going: \"his range is X, so what happens if I do Y? If I do Z?\" And on the turn he was already planning two streets ahead: what happens if he bets the river, what happens if he checks. Alex won 2,152 imaginary Mark dollars. Abby lost 460.",
+                "## Nobody is holding a musket",
+                "\"I have to call.\" \"This is a mandatory 3-bet.\" \"I'm forced to fold.\" No. Every time you hear yourself say you have to do something, you've skipped this question.",
+                "> Don't come up with reasons for a decision. Walk through every possibility, then decide."
+              ],
+              "drill": {
+                "intro": "For each spot, run \"what happens if\" through villain's range, then pick.",
+                "questions": [
+                  {
+                    "id": "1.2.2-q1",
+                    "prompt": "$1/3. You have top pair on a Q-high river. Villain's range is busted flush draws, two pair, and Qx. He's an aggressive player who bluffs every missed draw and value bets thin. What happens if you check?",
+                    "options": [
+                      { "key": "a", "text": "Everything checks behind, you win a small pot" },
+                      { "key": "b", "text": "Busted draws bluff, Qx bets, two pair probably bets too. Check is best" },
+                      { "key": "c", "text": "Only two pair bets, you lose value" },
+                      { "key": "d", "text": "He folds, so you must bet" }
+                    ],
+                    "correct": "b",
+                    "explain": "Against an aggressive player, checking gets money from all three buckets: the bluffs, the Qx, and the thin value. Against a passive player the answer changes: bet the biggest size that two pair calls and Qx raises."
+                  },
+                  {
+                    "id": "1.2.2-q2",
+                    "prompt": "Same hand, but villain is passive. He never bluffs missed draws and only bets when he has it. What happens if you check?",
+                    "options": [
+                      { "key": "a", "text": "Busted draws fold either way, two pair checks, Qx might bet small. You leave value on the table. Bet" },
+                      { "key": "b", "text": "He bluffs anyway, check" },
+                      { "key": "c", "text": "He checks the nuts, so overbet" },
+                      { "key": "d", "text": "Check-raise is now best" }
+                    ],
+                    "correct": "a",
+                    "explain": "A passive player gives you nothing when you check. Choose the biggest size that two pair still calls and Qx still raises. Same hand, same ranges, opposite decision, because the opponent changed."
+                  },
+                  {
+                    "id": "1.2.2-q3",
+                    "prompt": "$1/3, 3-bet pot in position with QQ against a rec. Flop K♠8♥4♣, he check-calls your small c-bet. Turn 2♦, he checks. His range: AK, KQ, 99, TT, JJ, a trapped KK or AA. What happens if you bet big?",
+                    "options": [
+                      { "key": "a", "text": "Everything worse folds, only AK and better call. Check back instead" },
+                      { "key": "b", "text": "99 and TT call, you get value. Bet" },
+                      { "key": "c", "text": "AK folds, you take it down. Bet" },
+                      { "key": "d", "text": "Nothing changes, size doesn't matter here" }
+                    ],
+                    "correct": "a",
+                    "explain": "99 and TT fold if you breathe on the pot. AK and KQ aren't folding to anything. If you check back, AK bets the river and 99 checks, so you still beat 99 at showdown and lose the minimum to AK. Betting big only moves money when you're behind."
+                  },
+                  {
+                    "id": "1.2.2-q4",
+                    "prompt": "$1/3. You open Q♦J♦ on the button, a fish defends. Flop T♠7♥2♦. He donks $15 into $25. Alex's line is to call his whole range here, even strong hands. Why?",
+                    "options": [
+                      { "key": "a", "text": "To be balanced" },
+                      { "key": "b", "text": "Raising folds out the junk he's donking with (7x, 88) that you want to keep in to pay off later, and he has to act first on the turn and will telegraph his hand" },
+                      { "key": "c", "text": "Because you have position you should never raise" },
+                      { "key": "d", "text": "Because donks are always strong" }
+                    ],
+                    "correct": "b",
+                    "explain": "What happens if you raise? His junk folds now instead of putting in more money later. What happens if you call? He acts first on the turn and tells you what he has with his size. Keep the BS in, and get the free information."
+                  },
+                  {
+                    "id": "1.2.2-q5",
+                    "prompt": "$1/3. You're out of position with top pair on a wet, dynamic flop against two players in position, both of whom stab too often. What happens if you check?",
+                    "options": [
+                      { "key": "a", "text": "It checks through and you lose value. Bet" },
+                      { "key": "b", "text": "They stab too often and telegraph their strength with sizing. You get to check-call or check-raise with more information. Check" },
+                      { "key": "c", "text": "You get bluffed off the best hand. Bet to protect" },
+                      { "key": "d", "text": "You look weak, so bet" }
+                    ],
+                    "correct": "b",
+                    "explain": "Marc's MO with multiple players in position: check and see what they do. This board is very likely to get stabbed, and the stabber's size tells you a lot. Betting yourself gives up all that information and bloats the pot out of position."
+                  },
+                  {
+                    "id": "1.2.2-q6",
+                    "prompt": "Which of these is \"what happens if\" thinking rather than \"bet because\" thinking?",
+                    "options": [
+                      { "key": "a", "text": "\"I'm betting because I have top pair and the board is wet\"" },
+                      { "key": "b", "text": "\"I have to call, I'm top of my range\"" },
+                      { "key": "c", "text": "\"If I bet small, his draws call and his Qx raises. If I check, his draws stab. He's passive, so I'll bet small\"" },
+                      { "key": "d", "text": "\"I'll raise to look polarized\"" }
+                    ],
+                    "correct": "c",
+                    "explain": "Only one of those runs each option through villain's range before deciding. The others decide first, then reach for a reason. \"To look polarized\" is a shiny object: it says nothing about what villain's hands do."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "1.2.3",
+              "title": "Question 3: What would I do with the inverse?",
+              "minutes": 4,
+              "concept": [
+                "The third question is for rivers. If you have a bluff, ask: if I had value here, what size would I bet to get called? If you have value, ask: if I had a bluff, what size would make the hand I'm targeting fold?",
+                "## Why it works",
+                "Your value size and your bluff size are aimed at the same hand in villain's range. Say you get to the river with the nuts and villain's range is mostly Tx. You'd bet maybe $300 into $800 to get a ten to call. You wouldn't jam, because a ten folds to a jam. So now you know: when you have air and want that same ten to fold, you don't need to jam either. Just bet more than the ten would call, maybe $650. Every dollar you don't risk is a dollar saved when it goes wrong.",
+                "## Alex on the river",
+                "Fish donked the flop and turn into Alex's Q♦J♦, Alex raised the turn, the river came an ace and the fish checked. Alex: \"If I had pocket aces and wanted a ten to call, I'd go about $300. So my bluff size, just to make sure a ten folds, is just under pot. $650.\" He didn't need the whole stack. Later, facing a $50 river bet from a capped fish: \"If I wanted TT or JJ to call my check-raise, I'd go about $250. So as a bluff I'll go $420.\" Both times the fish folded the hand he was targeting.",
+                "## Matt's check-raise",
+                "A player with Qx bet small on the river. Matt folded a weaker hand, but the river spot was interesting. If you had the nuts there, what size would you check-raise to get a queen to call? Villain had already said out loud he'd fold a queen to a check-raise, so maybe 2.5x. Which means a 4x or 5x check-raise folds out every queen. The inverse question told you the bluff was there and told you the size.",
+                "## It applies on the river",
+                "Flop and turn have their own one-question sizing rule (module 1.3). The inverse is the river tool. Use it every river, with value and with air.",
+                "> Pretend you got here with the nuts. What size gets paid? Now you know your bluff size too."
+              ],
+              "drill": {
+                "intro": "River sizing through the inverse. Figure out the value size first.",
+                "questions": [
+                  {
+                    "id": "1.2.3-q1",
+                    "prompt": "$1/3. River, pot $200, you have air. Villain is a rec whose range is almost all one-pair Tx. If you had the nuts, you'd bet about $75 to get a ten to call. What's your bluff size?",
+                    "options": [
+                      { "key": "a", "text": "$75, same as value" },
+                      { "key": "b", "text": "Shove, maximize fold equity" },
+                      { "key": "c", "text": "About $150: clearly more than a ten calls, without risking the stack" },
+                      { "key": "d", "text": "Check, there's no bluff here" }
+                    ],
+                    "correct": "c",
+                    "explain": "The ten folds to anything meaningfully bigger than the size it would call. Going $150 gets the fold and risks half as much as a shove. The inverse question gives you the floor, and you go a bit above it."
+                  },
+                  {
+                    "id": "1.2.3-q2",
+                    "prompt": "$1/3. You get to the river with the nut flush. Villain is a rec who check-called a small turn bet when the king came, and his range is mostly TT and JJ that are scared of the board. What's your value size into $340?",
+                    "options": [
+                      { "key": "a", "text": "Pot, you have the nuts" },
+                      { "key": "b", "text": "Overbet, he's a rec" },
+                      { "key": "c", "text": "Small, around $100, for the crying call" },
+                      { "key": "d", "text": "Check, let him bluff" }
+                    ],
+                    "correct": "c",
+                    "explain": "Alex's hand. TT and JJ see the king and queen on board and are looking for a reason to fold. Choose the size they can't resist. Pot or overbet folds out the only hands you're targeting."
+                  },
+                  {
+                    "id": "1.2.3-q3",
+                    "prompt": "$2/5. Turn went check-check, so villain is capped. River, you check, and he bets $50 into $82 in position. His range is mostly TT and JJ type hands that are ahead of you but can't call a check-raise. If you had 88 and wanted TT to call a check-raise, you'd go about $250. You decide to bluff-raise. What size?",
+                    "options": [
+                      { "key": "a", "text": "Min-raise to $100" },
+                      { "key": "b", "text": "Around $400, more than TT would call" },
+                      { "key": "c", "text": "All in" },
+                      { "key": "d", "text": "Exactly $250" }
+                    ],
+                    "correct": "b",
+                    "explain": "Alex went $420 here and got jacks to fold. If $250 is the biggest size TT calls, you need to be clearly past it. All-in risks far more for the same fold."
+                  },
+                  {
+                    "id": "1.2.3-q4",
+                    "prompt": "$1/3. River, villain bets $40 into $110 in position after checking back the turn. You read it as thin value with a queen. He's told you before that he folds a queen to a check-raise. If you had a nutted hand here, you'd check-raise to about 2.5x to get a queen to call. You have air. What size check-raise?",
+                    "options": [
+                      { "key": "a", "text": "2.5x, same as value" },
+                      { "key": "b", "text": "Don't raise, he has value" },
+                      { "key": "c", "text": "4x to 5x: every queen folds" },
+                      { "key": "d", "text": "Call and hope" }
+                    ],
+                    "correct": "c",
+                    "explain": "If the queen only calls a 2.5x raise, anything bigger makes it fold. The thin-value size told you his hand, and the inverse told you the raise size."
+                  },
+                  {
+                    "id": "1.2.3-q5",
+                    "prompt": "If your value size against a specific hand is $200, your bluff size targeting that same hand should be:",
+                    "options": [
+                      { "key": "a", "text": "The same, $200, to stay balanced" },
+                      { "key": "b", "text": "Smaller, to risk less" },
+                      { "key": "c", "text": "A bit bigger than $200, just past what that hand calls" },
+                      { "key": "d", "text": "Always all in" }
+                    ],
+                    "correct": "c",
+                    "explain": "Value and bluff sizes diverge on purpose. Value: the biggest size the target calls. Bluff: the smallest size the target folds to, which sits just above the value size. Marc has a whole video on why your river bluff and value sizes should not be the same."
+                  },
+                  {
+                    "id": "1.2.3-q6",
+                    "prompt": "On which street is \"what would I do with the inverse\" the main sizing question?",
+                    "options": [
+                      { "key": "a", "text": "Preflop" },
+                      { "key": "b", "text": "Flop" },
+                      { "key": "c", "text": "Turn" },
+                      { "key": "d", "text": "River" }
+                    ],
+                    "correct": "d",
+                    "explain": "Flop: biggest size where they raise strong and call weak. Turn: capped means big, uncapped means small. River: the inverse. That's the whole one-question sizing system, which module 1.3 covers in full."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "1.2.4",
+              "title": "Bad Thoughts Bingo",
+              "minutes": 4,
+              "concept": [
+                "Marc watched hours of Poker Out Loud, where players say their thoughts during real hands, and built a bingo card of the bad ones. He hit bingo in the first hand. Here's the card.",
+                "## The card",
+                "- **Hyperfocused on your own hand.** \"Bottom pair and a gutshot, no clubs unfortunately.\" Forty-five seconds about your cards, zero about his.",
+                "- **Range advantage obsession.** \"This board hits his range more than mine.\" Against a rec this is 25th on the list of things that matter.",
+                "- **Fear-based thinking.** \"I hate this card.\" \"I need to charge the draws.\" Fear deciding, not analysis.",
+                "- **Forgetting the pot size.** \"There's 85 in the pot... wait, 230?\" You can't size anything if you don't know the pot.",
+                "- **Not considering all the options.** \"I'm going to bet.\" Then reasons appear afterward. Your primary leak lives here.",
+                "- **Shiny objects.** Blockers, unblockers, physical tells, before you've ranged him. \"I don't block clubs\" means nothing until you know he has clubs.",
+                "- **Beautiful Mind syndrome.** \"If I 4-bet we might end up 4-bet-folding our equity, and he perceives this as my card...\" Deep into the meta while the actual hand goes unanswered.",
+                "- **\"I HAVE to.\"** Call, fold, 3-bet, give up. Nobody is holding a musket to your head.",
+                "- **Projecting your own tendencies.** \"What does he think I have?\" \"I'd never bet a set that small, so he can't have one.\" He isn't you.",
+                "## What good thoughts sound like",
+                "What is his range when he takes this action? What does that range do if I check, bet small, bet big? On the river, what would I do with the inverse? That's it. Alex's thought process in the comparison video had none of the bingo card in it. No open-enders, no range advantage, no \"I'm top of range.\" Very simple, very clean, very direct.",
+                "> If you're raising for value and you look pained when he calls, you made a mistake somewhere along the way."
+              ],
+              "drill": {
+                "intro": "Catch the bad thought. Each snippet is something a real player said out loud. Which square does it hit?",
+                "questions": [
+                  {
+                    "id": "1.2.4-q1",
+                    "prompt": "\"Flop bottom pair and a gutshot. No clubs, unfortunately. I think we're just going to call and re-evaluate the turn.\"",
+                    "options": [
+                      { "key": "a", "text": "Hyperfocused on own hand" },
+                      { "key": "b", "text": "Fear-based thinking" },
+                      { "key": "c", "text": "Forgetting the pot size" },
+                      { "key": "d", "text": "Projecting own tendencies" }
+                    ],
+                    "correct": "a",
+                    "explain": "Every word is about his own cards. Nothing about what the early-position raiser has when he bets into two players on a connected board."
+                  },
+                  {
+                    "id": "1.2.4-q2",
+                    "prompt": "\"This flop looks like it hits him a lot more than me. I don't mind taking a free card.\"",
+                    "options": [
+                      { "key": "a", "text": "Shiny objects" },
+                      { "key": "b", "text": "Range advantage obsession" },
+                      { "key": "c", "text": "\"I HAVE to\"" },
+                      { "key": "d", "text": "Beautiful Mind syndrome" }
+                    ],
+                    "correct": "b",
+                    "explain": "Whose range the board \"hits\" is a solver frame. Against a rec, the question is whether this spot gets stabbed if you check, and what his sizing tells you."
+                  },
+                  {
+                    "id": "1.2.4-q3",
+                    "prompt": "\"I hate this card. Probably a good bit of his range gets there now.\"",
+                    "options": [
+                      { "key": "a", "text": "Not considering all options" },
+                      { "key": "b", "text": "Forgetting the pot size" },
+                      { "key": "c", "text": "Fear-based thinking" },
+                      { "key": "d", "text": "Range advantage obsession" }
+                    ],
+                    "correct": "c",
+                    "explain": "Hating a card isn't analysis. Which hands in his range improved, and what does his action on this card tell you? Fear is the opposite of a question."
+                  },
+                  {
+                    "id": "1.2.4-q4",
+                    "prompt": "\"There's about 85 in the pot right now. I'm going to go a little bigger. 350. Wait, I thought the pot was 230?\"",
+                    "options": [
+                      { "key": "a", "text": "Forgetting the pot size" },
+                      { "key": "b", "text": "Hyperfocused on own hand" },
+                      { "key": "c", "text": "Shiny objects" },
+                      { "key": "d", "text": "Projecting own tendencies" }
+                    ],
+                    "correct": "a",
+                    "explain": "Two players in the same hand lost 20 seconds each trying to count the pot. Every sizing decision depends on it. Track it every street."
+                  },
+                  {
+                    "id": "1.2.4-q5",
+                    "prompt": "\"I've got a good hand, so I'm going to bet. I'll go about half pot.\"",
+                    "options": [
+                      { "key": "a", "text": "Fear-based thinking" },
+                      { "key": "b", "text": "Not considering all the options" },
+                      { "key": "c", "text": "\"I HAVE to\"" },
+                      { "key": "d", "text": "Range advantage obsession" }
+                    ],
+                    "correct": "b",
+                    "explain": "Good hand, so bet. That's the whole analysis. What happens if you check? What happens if you go big? What does his range do against each? This square is your primary leak, so this is the one to catch in yourself first."
+                  },
+                  {
+                    "id": "1.2.4-q6",
+                    "prompt": "\"Bluffs here are clubs and I don't block clubs. Also I saw him check his hand, which suggests maybe he doesn't have clubs.\"",
+                    "options": [
+                      { "key": "a", "text": "Beautiful Mind syndrome" },
+                      { "key": "b", "text": "Hyperfocused on own hand" },
+                      { "key": "c", "text": "Shiny objects" },
+                      { "key": "d", "text": "Forgetting the pot size" }
+                    ],
+                    "correct": "c",
+                    "explain": "Blockers and a physical tell, before any ranging of what two pair or a straight does when it bets this size on this turn. Shiny objects are the things you reach for when you haven't done the ranging."
+                  },
+                  {
+                    "id": "1.2.4-q7",
+                    "prompt": "\"4-betting is attractive but it has downsides in that we might end up 4-bet-folding our equity. And he probably perceives this turn as more of a range card for me than it is.\"",
+                    "options": [
+                      { "key": "a", "text": "Beautiful Mind syndrome" },
+                      { "key": "b", "text": "\"I HAVE to\"" },
+                      { "key": "c", "text": "Fear-based thinking" },
+                      { "key": "d", "text": "Forgetting the pot size" }
+                    ],
+                    "correct": "a",
+                    "explain": "Levels on levels while the simple questions go unanswered. Is he 3-betting too wide? Is he continuing too wide to a 4-bet? Those two questions decide linear vs polar. Everything else is fog."
+                  },
+                  {
+                    "id": "1.2.4-q8",
+                    "prompt": "\"This is a lot higher stakes than I've ever played and I don't want to screw this up. I think I have to go for it.\"",
+                    "options": [
+                      { "key": "a", "text": "Shiny objects" },
+                      { "key": "b", "text": "\"I HAVE to\"" },
+                      { "key": "c", "text": "Range advantage obsession" },
+                      { "key": "d", "text": "Hyperfocused on own hand" }
+                    ],
+                    "correct": "b",
+                    "explain": "You don't have to do anything. The moment you hear \"I have to,\" you've stopped asking what happens if. Greg jammed for value and looked pained when he got called."
+                  },
+                  {
+                    "id": "1.2.4-q9",
+                    "prompt": "\"I'd always raise a set on this flop, so he can't have a set when he just calls.\"",
+                    "options": [
+                      { "key": "a", "text": "Projecting own tendencies" },
+                      { "key": "b", "text": "Not considering all options" },
+                      { "key": "c", "text": "Forgetting the pot size" },
+                      { "key": "d", "text": "Fear-based thinking" }
+                    ],
+                    "correct": "a",
+                    "explain": "He isn't you. On a dry static board most players slow-play sets. Range him by what players like him do, not by what you would do with his cards."
+                  },
+                  {
+                    "id": "1.2.4-q10",
+                    "prompt": "\"What does he think I have? I'm going to raise large and polarize my bet here.\"",
+                    "options": [
+                      { "key": "a", "text": "Forgetting the pot size" },
+                      { "key": "b", "text": "Hyperfocused on own hand" },
+                      { "key": "c", "text": "Projecting own tendencies" },
+                      { "key": "d", "text": "Range advantage obsession" }
+                    ],
+                    "correct": "c",
+                    "explain": "Who cares what he thinks you have? Marc's reaction word for word. And \"polarize my bet\" is a word being used without a reason behind it. Go back to his range and what it does against each size."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "1.2.5",
+              "title": "Run the three questions on a hand",
+              "minutes": 5,
+              "concept": [
+                "One hand, three streets. At each street, answer question 1, then question 2. On the river, question 3. This is what the process feels like when it's running.",
+                "## The hand",
+                "$1/3 at Encore, $400 effective. You open to $12 from the cutoff with K♥Q♥. A recreational player calls in the big blind. He's been calling a lot preflop and fast-playing his big hands when he has them.",
+                "Flop: Q♠ 8♠ 4♦. You have top pair with a good kicker. He checks.",
+                "> Work through the drill. The turn and river are revealed as you go."
+              ],
+              "drill": {
+                "intro": "Three streets. Question 1, then question 2, then on the river question 3.",
+                "questions": [
+                  {
+                    "id": "1.2.5-q1",
+                    "prompt": "Flop Q♠8♠4♦, he checks. Question 1: what is his range going into this flop, and is it capped?",
+                    "options": [
+                      { "key": "a", "text": "Narrow: he'd 3-bet all his good hands, so only junk" },
+                      { "key": "b", "text": "Wide and uncapped: any pair, suited hands, broadways, Ax. He hasn't done anything yet" },
+                      { "key": "c", "text": "Capped: a check means no top pair" },
+                      { "key": "d", "text": "Only flush draws" }
+                    ],
+                    "correct": "b",
+                    "explain": "A big-blind call from a rec is wide: pairs, suited stuff, broadways, any ace. A check on the flop tells you almost nothing yet. Uncapped."
+                  },
+                  {
+                    "id": "1.2.5-q2",
+                    "prompt": "Question 2: what happens if you bet small (about $10 into $27), bet big (about $25), or check?",
+                    "options": [
+                      { "key": "a", "text": "Small: weak hands call, strong hands raise on this wet board. Big: weak hands fold, strong hands call. Check: he stabs with draws, you lose value. Bet small" },
+                      { "key": "b", "text": "Big is best because you have top pair and the board is wet" },
+                      { "key": "c", "text": "Check: you're out of position" },
+                      { "key": "d", "text": "Size doesn't matter against a rec" }
+                    ],
+                    "correct": "a",
+                    "explain": "You're in position with top pair on a wet, dynamic board. The small size does two jobs: his weak hands call, and his sets and two pair fast-play, which caps him when he doesn't raise. You bet $10. He calls. Turn: 2♣, a brick. He checks."
+                  },
+                  {
+                    "id": "1.2.5-q3",
+                    "prompt": "Turn Q♠8♠4♦ 2♣, he check-called the small bet and checks the brick. Question 1 again: what's his range now?",
+                    "options": [
+                      { "key": "a", "text": "Still uncapped, nothing changed" },
+                      { "key": "b", "text": "Capped: sets and two pair would have raised the small bet on this wet flop. He has Qx, 8x, flush draws, straight draws" },
+                      { "key": "c", "text": "Only flush draws" },
+                      { "key": "d", "text": "Only Qx" }
+                    ],
+                    "correct": "b",
+                    "explain": "This rec fast-plays big hands, and the flop was wet enough that he'd protect them. A call then a check on a brick leaves him with one pair and draws. Capped and inelastic."
+                  },
+                  {
+                    "id": "1.2.5-q4",
+                    "prompt": "Question 2 on the turn: what happens if you bet big, bet small, or check?",
+                    "options": [
+                      { "key": "a", "text": "Check: he's capped, so give him a free card" },
+                      { "key": "b", "text": "Small: he'd raise his strong hands, but he doesn't have any left" },
+                      { "key": "c", "text": "Big: his Qx, 8x and draws aren't folding to any size, so take the most from them. Bet big" },
+                      { "key": "d", "text": "Shove: he never folds" }
+                    ],
+                    "correct": "c",
+                    "explain": "Capped and inelastic means big. Qx won't fold, draws won't fold, 8x mostly won't fold. Choose the biggest size those hands call. You bet $35 into $47. He calls. River: 9♠. The flush comes in. He checks."
+                  },
+                  {
+                    "id": "1.2.5-q5",
+                    "prompt": "River Q♠8♠4♦2♣ 9♠, the flush got there, he checks. Question 1: what's his range now?",
+                    "options": [
+                      { "key": "a", "text": "Qx worse than yours, 8x, made flushes, and a few busted straight draws" },
+                      { "key": "b", "text": "Only flushes" },
+                      { "key": "c", "text": "Only Qx" },
+                      { "key": "d", "text": "Air, he'd have bet a flush" }
+                    ],
+                    "correct": "a",
+                    "explain": "Carry the thread. He had one pair and draws. The spade draws just got there. The Qx and 8x are still there. Some recs check a flush here hoping you bet, so don't remove them."
+                  },
+                  {
+                    "id": "1.2.5-q6",
+                    "prompt": "Question 2 and question 3: what happens if you bet, and what would you do with the inverse?",
+                    "options": [
+                      { "key": "a", "text": "Bet big: Qx calls" },
+                      { "key": "b", "text": "If you bet, worse Qx mostly folds now that the flush is in, 8x folds, and flushes raise. If you had a flush yourself you'd bet small to get Qx to call, which tells you Qx is price-sensitive. Check back and take your showdown value" },
+                      { "key": "c", "text": "Bet small to block" },
+                      { "key": "d", "text": "Shove to fold out his flushes" }
+                    ],
+                    "correct": "b",
+                    "explain": "Your hand is showdown value now. Worse Qx is scared of the flush and mostly folds to a bet, 8x folds, and only the hands that beat you continue. The inverse confirms it: with the flush you'd need to go small to get Qx to call, so there's little value left to take. Check back. If he'd led small on this river after the turn check-through, that's a snap call by the most-profitable-line logic. Here he checked, so you take the free showdown."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "title": "The One-Question Sizing Hack",
+          "summary": "Flop: biggest size where they raise strong, call weak. Turn: capped → big, not capped → small. River: the inverse. \"Bet BECAUSE\" vs \"What happens IF.\"",
+          "locked": true,
+          "lessons": []
+        },
+        {
+          "id": "1.4",
+          "title": "Building YOUR Personal Process",
+          "summary": "Customizing the questions. Active vs passive study. One hand → 100 hands. Process audit on your own hands.",
+          "locked": true,
+          "lessons": []
+        },
+        {
+          "id": "1.5",
+          "title": "Speed & Consistency Under Pressure",
+          "summary": "Practice harder than you play. Shot-clock ladder: untimed → 60s → 30s → 15s. Fog-of-war scenarios. Phase 1 assessment.",
+          "locked": true,
+          "lessons": []
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "number": 2,
+      "title": "Ranging",
+      "tagline": "Reading your opponents",
+      "modules": [
+        { "id": "2.1", "title": "Preflop Ranges by Player Type", "summary": "Typical $1/2 ranges by position and player type. The pool under-3-bets from the big blind. Linear vs polar.", "locked": true, "lessons": [] },
+        { "id": "2.2", "title": "Flop Ranging with Big Buckets", "summary": "The 7-bucket system and how each action filters the buckets. Sizing tells on wet vs dry boards.", "locked": true, "lessons": [] },
+        { "id": "2.3", "title": "Turn Ranging & Narrowing", "summary": "Double barrels, check-backs that cap, check-raises, and the under-bluffed check-back-then-raise.", "locked": true, "lessons": [] },
+        { "id": "2.4", "title": "River Ranging & Specific Hands", "summary": "Name 3–8 combos. Rec check = check-call, reg check = check-fold. Small IP bet = thin value.", "locked": true, "lessons": [] },
+        { "id": "2.5", "title": "Speed Ranging & Assessment", "summary": "15-second target. Timed ladder. Phase 2 assessment.", "locked": true, "lessons": [] }
+      ]
+    },
+    {
+      "id": "p3",
+      "number": 3,
+      "title": "Calibration",
+      "tagline": "Pattern recognition",
+      "modules": [
+        { "id": "3.1", "title": "Preflop Patterns & Red Flags", "summary": "5 preflop patterns and the 7 red flags.", "locked": true, "lessons": [] },
+        { "id": "3.2", "title": "Flop Patterns", "summary": "Telegraphed sizing on wet boards, slow-plays in position, range betting, min-raises.", "locked": true, "lessons": [] },
+        { "id": "3.3", "title": "Turn Patterns", "summary": "Check-back then raise, check-raise after a double barrel, donk then big turn, small twice.", "locked": true, "lessons": [] },
+        { "id": "3.4", "title": "River Patterns", "summary": "Nut-blocker bluffs, board pairing, four-flush and four-straight stickiness.", "locked": true, "lessons": [] },
+        { "id": "3.5", "title": "The Bluff-Catching Checklist", "summary": "Beat value? Capable? Gave rope? Size significant? Non-showdown hands? Bluff-raise better?", "locked": true, "lessons": [] },
+        { "id": "3.6", "title": "The 5 Under-Bluffed Spots", "summary": "Turn/river check-raises, ace-high triple barrels, BB 3-bet closing action, check-back then raise, triple broadway.", "locked": true, "lessons": [] },
+        { "id": "3.7", "title": "Combining Patterns & Live Tells", "summary": "Stacking patterns. Tells as tiebreakers. Phase 3 assessment.", "locked": true, "lessons": [] }
+      ]
+    },
+    {
+      "id": "p4",
+      "number": 4,
+      "title": "Bet Sizing",
+      "tagline": "Scalpel and jackhammer",
+      "modules": [
+        { "id": "4.1", "title": "The Sizing Philosophy", "summary": "Middle sizes as a crutch. Scalpel vs jackhammer. The Pot Limit Hold'em disease.", "locked": true, "lessons": [] },
+        { "id": "4.2", "title": "Preflop Sizing", "summary": "Opens, ISOs, 3-bets, squeezes, 4-bets. Split 3-bet sizes to isolate fish.", "locked": true, "lessons": [] },
+        { "id": "4.3", "title": "Flop Sizing & Range Betting", "summary": "Range bet small. Overbet-or-check on dry static boards. When to deviate.", "locked": true, "lessons": [] },
+        { "id": "4.4", "title": "Turn Sizing", "summary": "Capped and inelastic = big. Trappy = small twice. SPR planning.", "locked": true, "lessons": [] },
+        { "id": "4.5", "title": "River Sizing & The Inverse", "summary": "The full inverse system. Where opponents get stickier. Two exceptions for medium sizes.", "locked": true, "lessons": [] },
+        { "id": "4.6", "title": "Multi-Street Sizing Plans", "summary": "Planning flop through river. The autopilot problem. Delayed gratification.", "locked": true, "lessons": [] },
+        { "id": "4.7", "title": "The Most Profitable Line in Poker", "summary": "C-bet flop, check back turn, bluff-catch river. Small river bet = call. Big = fold.", "locked": true, "lessons": [] }
+      ]
+    },
+    {
+      "id": "p5",
+      "number": 5,
+      "title": "Exploitation",
+      "tagline": "Playing the player",
+      "modules": [
+        { "id": "5.1", "title": "Exploit Immediately", "summary": "Buy-in tells, first impressions, respect earned not given.", "locked": true, "lessons": [] },
+        { "id": "5.2", "title": "The OOP System", "summary": "Check your range, respond to stab sizing, 6–10x check-raises, donk rivers when you hit.", "locked": true, "lessons": [] },
+        { "id": "5.3", "title": "Exploiting Calling Stations", "summary": "Thin value, no big bluffs, linear 3-bets, size up premiums.", "locked": true, "lessons": [] },
+        { "id": "5.4", "title": "Exploiting Nits", "summary": "Bluff more, steal, don't value bet huge, respect aggression.", "locked": true, "lessons": [] },
+        { "id": "5.5", "title": "Exploiting Trappy Players", "summary": "Small-small uncapping. Nut-changing turns = check back.", "locked": true, "lessons": [] },
+        { "id": "5.6", "title": "Exploiting Aggro Players & Range Bettors", "summary": "Check-raise flops vs range-bettors. 4-bet linear vs fish, polar vs thinkers.", "locked": true, "lessons": [] },
+        { "id": "5.7", "title": "Multiway Pots", "summary": "Bet good hands yourself multiway. Stabs multiway are stronger. Squeeze linear.", "locked": true, "lessons": [] },
+        { "id": "5.8", "title": "Turning Showdown Value Into Bluffs", "summary": "The most under-used play. When the bluff catcher doesn't beat value, can a raise fold out value?", "locked": true, "lessons": [] },
+        { "id": "5.9", "title": "Solvers for Exploits", "summary": "Finding deviations, not looking up answers. Node locking basics. Phase 5 assessment.", "locked": true, "lessons": [] }
+      ]
+    },
+    {
+      "id": "p6",
+      "number": 6,
+      "title": "Mastery",
+      "tagline": "Integration",
+      "modules": [
+        { "id": "6.1", "title": "Session Management", "summary": "The 3-strike system. Gethin's daydream rule. The straddle question. Pre-session planning.", "locked": true, "lessons": [] },
+        { "id": "6.2", "title": "Study Methods", "summary": "Active study. One hand → 100 hands. Deck-of-cards drills.", "locked": true, "lessons": [] },
+        { "id": "6.3", "title": "Bankroll & Career", "summary": "Skills over bankroll. Game selection. Table image. Authenticity.", "locked": true, "lessons": [] },
+        { "id": "6.4", "title": "The Low Stakes Meta 2025–2026", "summary": "Nut-blocker bluffs, double-previous-street bluffs, wider 3-bets, polar rec squeezes.", "locked": true, "lessons": [] },
+        { "id": "6.5", "title": "Full Integration", "summary": "Mixed-table sims. Full shot clock. Final 10-hand exam.", "locked": true, "lessons": [] }
+      ]
+    }
+  ]
+}
